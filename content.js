@@ -371,7 +371,7 @@ const SITE_CONTENT = {
         title: "发表文章",
         kicker: "9 篇 SCI 论文",
         intro:
-          "论文列表展示题名、期刊、年份、影响因子与可点击官网链接；影响因子作为可维护字段，正式投递前建议复核。",
+          "以下研究均深度参与生物标志物设计、数据分析、文章撰写等工作，并以署名作者身份参与发表。",
         type: "papers",
       },
       {
@@ -632,7 +632,8 @@ const SITE_CONTENT = {
         id: "papers",
         title: "Publications",
         kicker: "9 SCI papers",
-        intro: "The publication list highlights journal, year, impact factor and official article links. Impact factors are maintained as editable fields and should be verified before formal submission.",
+        intro:
+          "For the studies below, I contributed as a named author with substantial involvement in biomarker design, data analysis, and manuscript development.",
         type: "papers",
       },
       {
