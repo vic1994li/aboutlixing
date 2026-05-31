@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Li Xing | Medical Affairs Portfolio</title>
+    <meta
+      name="description"
+      content="Li Xing bilingual medical affairs portfolio and resume website."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Li Xing home">
+          <span class="brand-mark">LX</span>
+          <span>
+            <strong data-i18n="meta.name">李行</strong>
+            <small data-i18n="meta.roleShort">Medical Affairs</small>
+          </span>
+        </a>
+
+        <nav class="top-module-nav" id="topModuleNav" aria-label="Portfolio navigation"></nav>
+
+        <div class="header-actions">
+          <button class="language-toggle" type="button" id="languageToggle" aria-live="polite">
+            EN
+          </button>
+          <a class="ghost-link" href="#contact" data-i18n="actions.contact">联系我</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" id="overview">
+          <div class="profile-panel">
+            <div class="portrait-card" aria-label="Professional photo placeholder">
+              <div class="portrait-frame">
+                <img src="./assets/profile/li-xing-profile.jpg" alt="Li Xing portrait" />
+              </div>
+            </div>
+
+            <div class="identity-block">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Medical Affairs · Precision Oncology · ctDNA/MRD</p>
+              <h1 data-i18n="hero.name">李行</h1>
+              <p class="location-line" data-i18n="hero.location">Shanghai, China</p>
+              <p class="hero-copy" data-i18n="hero.summary"></p>
+
+              <div class="hero-actions">
+                <a class="primary-button" href="#modules" id="exploreProjects" data-i18n="actions.explore">查看代表项目</a>
+                <button class="secondary-button" type="button" id="resumeButton" data-i18n="actions.resume">
+                  下载简历
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="evidence-panel" aria-label="Evidence and expertise">
+            <div class="evidence-header">
+              <p class="eyebrow" data-i18n="evidence.eyebrow">证据积累与专业能力</p>
+            </div>
+
+            <div class="research-translation">
+              <p class="mini-label" data-i18n="evidence.translation.label">科研转化</p>
+              <div class="translation-metrics">
+                <div class="translation-card">
+                  <strong data-i18n="evidence.translation.publications.value">9</strong>
+                  <span data-i18n="evidence.translation.publications.label">项研究成果转化为 SCI 论文发表</span>
+                </div>
+                <div class="translation-card">
+                  <strong data-i18n="evidence.translation.impact.value">140+</strong>
+                  <span data-i18n="evidence.translation.impact.label">累计影响因子</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="evidence-divider"></div>
+
+            <div class="evidence-block">
+              <p class="mini-label" data-i18n="evidence.focus.label">专业聚焦</p>
+              <div class="evidence-tags" id="evidenceFocusTags"></div>
+            </div>
+
+            <div class="evidence-divider"></div>
+
+            <div class="evidence-block">
+              <p class="mini-label" data-i18n="evidence.strengths.label">核心能力</p>
+              <div class="evidence-tags" id="evidenceStrengthTags"></div>
+            </div>
+
+            <p class="evidence-note" data-i18n="evidence.note">
+              持续参与肿瘤精准医学与液体活检相关研究，能够将临床问题、研究设计、数据结果和医学传播串联成完整的证据转化路径。
+            </p>
+          </aside>
+        </section>
+
+        <section class="skills-strip" aria-label="Skill highlights">
+          <div id="skillTags" class="tag-list"></div>
+        </section>
+
+        <section class="module-section" id="modules">
+          <div class="module-layout">
+            <article class="module-content" id="moduleContent" tabindex="0"></article>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">期待进一步沟通</h2>
+            <p data-i18n="contact.copy"></p>
+          </div>
+          <div class="contact-grid" id="contactGrid"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
