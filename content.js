@@ -27,7 +27,7 @@ const featuredProject = {
     label: "Featured Project · NSCLC · MRD · Evidence Generation",
     title: "驱动基因突变NSCLC全国多中心临床研究与上市前证据生成",
     summary:
-      "作为项目负责人，推进驱动基因突变 NSCLC 全国多中心真实世界研究，覆盖研究方案与文件设计、入组规划、中心协作、医学核查、数据解读、论文发表及医学传播，为 MRD 相关上市前证据生成提供支持。",
+      "作为项目负责人，推进驱动基因突变 NSCLC 全国多中心真实世界研究，覆盖研究设计、CRF 与 SAP 撰写、入组规划、多中心协作、CRO 及第三方管理、医学核查、数据解读、论文发表与医学传播，为 MRD 相关上市前证据生成提供支持。",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
       "全国多中心真实世界研究",
@@ -41,16 +41,24 @@ const featuredProject = {
       innovation:
         "本研究围绕驱动基因突变 NSCLC 设计全国多中心真实世界证据路径，聚焦核心驱动事件在术后 ctDNA 监测中的价值，探索 driver-informed MRD 在复发风险评估、长期随访和临床转化中的应用潜力，为上市前证据生成和医学沟通提供支持。",
       valueSummary:
-        "该项目体现了我在肿瘤医学事务与转化研究中的复合能力：能够从临床未满足需求和上市前证据需求出发，推动研究设计与文件撰写、入组规划、多中心协作、医学核查、数据解读和论文发表，并将研究结果转化为会议汇报、专家沟通与医学教育内容。",
+        "该项目体现了我在肿瘤医学事务与转化研究中的复合能力：能够从临床未满足需求和上市前证据需求出发，主导 CRF 与 SAP 设计撰写，负责多中心项目及 CRO、第三方合作方管理，推动医学核查、数据解读和论文发表，并将研究结果转化为会议汇报、专家沟通与医学教育内容。",
     },
     roles: [
       {
         title: "Study Design｜研究设计",
-        copy: "参与并推动研究框架设计，明确目标人群、关键终点、采样节点、随访策略和真实世界证据路径。",
+        copy: "牵头研究框架设计，明确研究目标、目标人群、关键终点、采样节点、随访策略和真实世界证据路径。",
       },
       {
         title: "Clinical Study Documents｜研究文件",
-        copy: "参与研究方案、数据采集表、随访表及项目管理表格的设计与迭代，支持各中心一致执行。",
+        copy: "推动研究方案、访视与采样计划、随访表及研究管理文件的设计与迭代，支持各中心一致执行。",
+      },
+      {
+        title: "CRF Development｜CRF 设计",
+        copy: "主导 CRF 设计和撰写，根据方案、终点和分析需求定义临床变量、访视结构、字段规则及数据采集逻辑，并协调研究者、CRO、数据和统计团队完成评审迭代。",
+      },
+      {
+        title: "SAP Development｜SAP 撰写",
+        copy: "主导 SAP 撰写，明确分析集、终点、变量、统计方法、亚组与敏感性分析及缺失数据处理原则，并推动统计分析落地。",
       },
       {
         title: "Enrollment Planning｜入组规划",
@@ -58,7 +66,11 @@ const featuredProject = {
       },
       {
         title: "Multi-center Coordination｜多中心协作",
-        copy: "协调研究者、内部团队及检测、统计和数据分析合作方，推进样本、随访、数据与关键节点管理。",
+        copy: "协调研究中心和内部团队，推进中心执行、患者入组、样本、随访、数据及关键里程碑管理。",
+      },
+      {
+        title: "CRO & Vendor Management｜CRO 与第三方管理",
+        copy: "负责明确工作范围、关键里程碑、质量要求和交付标准，跟踪进度、中心执行、数据质量与交付，识别风险并推动纠正措施和问题闭环。",
       },
       {
         title: "Medical Review｜医学核查",
@@ -66,7 +78,7 @@ const featuredProject = {
       },
       {
         title: "Data Interpretation｜数据解读",
-        copy: "参与研究数据分析和医学解读，围绕 MRD 状态、复发风险、检测时间点及驱动基因亚组形成结论。",
+        copy: "参与统计结果审核和医学解读，围绕 MRD 状态、复发风险、检测时间点及驱动基因亚组形成研究结论。",
       },
       {
         title: "Publication & Communication｜发表与传播",
@@ -143,7 +155,7 @@ const featuredProject = {
     label: "Featured Project · NSCLC · MRD · Evidence Generation",
     title: "National Multicenter Clinical Study and Pre-market Evidence Generation in Driver-mutant NSCLC",
     summary:
-      "As project lead, I coordinated a national multicenter real-world study in driver-mutant NSCLC, supporting study design and document development, enrollment planning, site coordination, medical review, data interpretation, publication development, and scientific communication for pre-market MRD evidence generation.",
+      "As project lead, I coordinated a national multicenter real-world study in driver-mutant NSCLC, covering study design, CRF and SAP development, enrollment planning, multicenter coordination, CRO and vendor management, medical review, data interpretation, publication development, and scientific communication for pre-market MRD evidence generation.",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
       "National multicenter real-world study",
@@ -157,16 +169,24 @@ const featuredProject = {
       innovation:
         "This study established a national multicenter real-world evidence pathway in driver-mutant NSCLC. By focusing on key driver alterations and postoperative ctDNA monitoring, it explored the clinical utility of driver-informed MRD for recurrence risk assessment, longitudinal surveillance, and translational evidence generation.",
       valueSummary:
-        "This project demonstrates my ability to connect unmet clinical needs with study design and document development, enrollment planning, multicenter coordination, medical review, data interpretation, publication development, and scientific communication within a real-world research setting. It also reflects my experience translating study findings into conference presentations, expert engagement, and medical education.",
+        "This project demonstrates my ability to connect unmet clinical needs with study design, lead CRF and SAP development, manage multicenter execution and CRO or vendor delivery, and drive medical review, data interpretation, publication development, and scientific communication within a real-world research setting.",
     },
     roles: [
       {
         title: "Study Design",
-        copy: "Contributed to the study framework, including target population, key endpoints, sampling timepoints, follow-up strategy, and the real-world evidence pathway.",
+        copy: "Led development of the study framework, including objectives, target population, key endpoints, sampling timepoints, follow-up strategy, and the real-world evidence pathway.",
       },
       {
         title: "Clinical Study Documents",
-        copy: "Supported the development and iteration of the protocol, data collection forms, follow-up forms, and project tracking tools for consistent site execution.",
+        copy: "Drove the development and iteration of the protocol, visit and sampling schedules, follow-up forms, and study management documents for consistent site execution.",
+      },
+      {
+        title: "CRF Development",
+        copy: "Led CRF design and authoring, defining clinical variables, visit structure, field rules, and data-capture logic from the protocol, endpoints, and analysis needs, and coordinated review with investigators, the CRO, data, and statistics teams.",
+      },
+      {
+        title: "SAP Development",
+        copy: "Led SAP authoring, defining analysis sets, endpoints, variables, statistical methods, subgroup and sensitivity analyses, and missing-data principles, and worked with statisticians to operationalize the analysis logic.",
       },
       {
         title: "Enrollment Planning",
@@ -174,7 +194,11 @@ const featuredProject = {
       },
       {
         title: "Multi-center Coordination",
-        copy: "Coordinated investigators, internal teams, and testing, statistics, and data-analysis partners across samples, follow-up data, and key milestones.",
+        copy: "Coordinated study sites and internal teams across site execution, enrollment, samples, follow-up data, and key milestones.",
+      },
+      {
+        title: "CRO and Vendor Management",
+        copy: "Managed scope, milestones, quality expectations, and deliverables for the CRO and third-party partners; tracked progress, site execution, data quality, and delivery while driving corrective actions and issue closure.",
       },
       {
         title: "Medical Review",
@@ -182,7 +206,7 @@ const featuredProject = {
       },
       {
         title: "Data Interpretation",
-        copy: "Contributed to data analysis and medical interpretation focused on MRD status, recurrence risk, sampling timepoints, and driver-gene subgroups.",
+        copy: "Reviewed statistical outputs and contributed to medical interpretation and study conclusions focused on MRD status, recurrence risk, sampling timepoints, and driver-gene subgroups.",
       },
       {
         title: "Publication & Medical Communication",
@@ -274,7 +298,7 @@ const SITE_CONTENT = {
       location: "Shanghai, China",
       photoNote: "职业照待补充",
       summary:
-        "具备肿瘤领域 Medical Affairs、MSL 及转化研究工作经验，长期聚焦肺癌靶向治疗、免疫治疗、耐药机制及生物标志物研究。具备从临床未满足需求识别、研究方案及数据采集框架设计，到多中心项目推进、研究者沟通、医学核查、数据解读和论文发表的完整经验。能够协调研究者、内部跨部门团队及第三方合作方，推动患者入组、临床与样本数据采集、研究节点管理及问题闭环，并将临床证据转化为产品医学价值和专家沟通内容。",
+        "具备肿瘤领域 Medical Affairs、MSL 及转化研究工作经验，长期聚焦肺癌靶向治疗、免疫治疗、耐药机制及生物标志物研究。具备从临床未满足需求识别、研究方案设计，到主导 CRF 与统计分析计划（SAP）撰写、多中心项目推进、医学核查、数据解读和论文发表的完整经验。负责真实世界研究中 CRO 及第三方合作方的进度、质量与交付管理，能够协调研究者、数据管理、统计、生物信息、实验室及内部团队推动问题闭环，并将临床证据转化为医学价值和专家沟通内容。",
     },
     evidence: {
       eyebrow: "证据积累与专业能力",
@@ -295,10 +319,10 @@ const SITE_CONTENT = {
       },
       strengths: {
         label: "核心能力",
-        tags: ["医学策略", "临床研究管理", "医学核查", "证据生成"],
+        tags: ["研究设计", "CRF / SAP", "CRO 与第三方管理", "医学审阅"],
       },
       note:
-        "能够将临床未满足需求、研究设计、多中心项目推进、数据解读与医学传播串联为完整的证据生成路径。",
+        "能够将研究设计、CRF 与 SAP、多中心执行、CRO 管理、数据审阅和论文发表串联为完整的真实世界证据生成路径。",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -315,7 +339,7 @@ const SITE_CONTENT = {
       "Medical Strategy",
       "Clinical Study Design",
       "Multi-center Project Management",
-      "Medical Monitoring",
+      "Medical Review",
       "KOL Engagement",
       "Scientific Communication",
     ],
@@ -355,12 +379,12 @@ const SITE_CONTENT = {
                 copy: "参与制定并推动肺癌年度医学策略，通过研究者沟通、专家访谈及 ELCC、WCLC、ASCO 等证据追踪识别临床需求，将洞察转化为研究方向、学术活动和内部医学建议。",
               },
               {
-                title: "临床研究设计及研究文件撰写",
-                copy: "围绕 IIT 和真实世界研究参与方案设计，支持目标人群、入排标准、终点、随访与采样节点规划，并撰写或迭代研究方案、数据采集表、随访表及研究管理表格。",
+                title: "临床研究设计、CRF 与 SAP 撰写",
+                copy: "围绕 IIT 和真实世界研究设计目标人群、入排标准、终点、访视、随访及采样节点；主导 CRF 设计与撰写，定义临床变量、访视结构、字段规则和数据采集逻辑；主导 SAP 撰写，明确分析集、终点、变量、统计方法、亚组与敏感性分析及缺失数据处理原则，并推动统计分析落地。",
               },
               {
-                title: "多中心项目管理",
-                copy: "推进全国多中心项目时间表、入组目标、中心沟通、样本流转和随访管理，协调研究者、内部跨部门团队及第三方检测、统计和数据分析合作方，跟进关键节点与问题闭环。",
+                title: "多中心项目及 CRO、第三方管理",
+                copy: "负责真实世界研究中 CRO 及第三方合作方管理，明确工作范围、关键里程碑、质量要求和交付标准；跟踪全国多中心项目进度、中心执行、患者入组、样本与随访、数据质量和交付情况，协调 CRO、研究中心、数据管理、统计、生物信息、实验室及内部团队，识别风险和偏差并推动纠正措施与问题闭环。",
               },
               {
                 title: "医学核查、医学答疑和数据审阅",
@@ -368,7 +392,7 @@ const SITE_CONTENT = {
               },
               {
                 title: "证据生成、论文发表和医学传播",
-                copy: "参与研究数据解读，推动摘要、论文、研究报告和会议材料撰写，将研究结果转化为专家沟通、医学教育和内部科学支持内容。",
+                copy: "参与统计结果审核、医学解释和研究结论形成，推动摘要、论文、研究报告和会议材料撰写，将研究结果转化为专家沟通、医学教育和内部科学支持内容。",
               },
             ],
           },
@@ -423,45 +447,51 @@ const SITE_CONTENT = {
       {
         id: "focus",
         title: "核心能力",
-        kicker: "Medical Affairs Capabilities",
-        intro: "围绕药企医学经理、MSL 及 Clinical Medical Manager 岗位所需能力，覆盖策略、研究、项目、医学审阅、专家合作与证据传播。",
+        kicker: "Clinical Research & Medical Affairs Capabilities",
+        intro: "重点展示真实世界研究中的研究设计、CRF 与 SAP 撰写、多中心及 CRO 管理、医学审阅和证据发表能力。",
         type: "focus",
         items: [
           {
-            icon: "strategy",
-            title: "肿瘤医学策略与疾病领域理解",
+            icon: "study",
+            title: "Clinical Study Design｜临床研究设计",
             copy:
-              "熟悉 NSCLC 与 SCLC 主要治疗路径，持续关注靶向治疗、免疫治疗、TKI 耐药、ADC 及生物标志物进展。能够结合证据追踪与专家洞察，支持年度医学策略、研究方向和医学沟通重点制定。",
+              "从临床未满足需求和证据目标出发，主导或推动 IIT 与真实世界研究设计。能够定义研究目标、目标人群、入排标准、主要及次要终点、访视、随访和采样节点。",
           },
           {
-            icon: "documents",
-            title: "临床研究设计与文件撰写",
+            icon: "crf",
+            title: "CRF Development｜CRF 设计与撰写",
             copy:
-              "具备 IIT 与真实世界研究参与经验，能够从未满足临床需求出发支持目标人群、入排标准、终点、随访和采样节点设计。可参与撰写研究方案、数据采集表、随访表及项目管理文件。",
+              "主导 CRF 设计和撰写，根据研究方案、研究终点和分析需求定义临床变量、访视结构、字段规则及数据采集逻辑。关注数据完整性、医学合理性和后续统计可分析性，并协调研究者、CRO、数据和统计团队完成评审迭代。",
           },
           {
-            icon: "network",
-            title: "多中心临床项目管理",
+            icon: "analysis",
+            title: "Statistical Analysis Plan｜统计分析计划",
             copy:
-              "能够围绕研究时间表、中心启动、入组目标、样本流转、随访和关键节点推进全国多中心项目。具备协调研究者、内部团队及外部检测、统计和数据分析合作方的经验。",
+              "主导统计分析计划（SAP）撰写，明确分析集、主要和次要终点、变量定义、统计方法、亚组分析、敏感性分析及缺失数据处理原则。与统计团队沟通分析逻辑并推动统计分析落地。",
+          },
+          {
+            icon: "project",
+            title: "Multi-center Project Management｜多中心项目管理",
+            copy:
+              "负责全国多中心真实世界研究的时间表、入组目标、中心沟通、样本与随访、数据和关键里程碑管理。持续识别执行风险和偏差，协调各方推进纠正措施及问题闭环。",
+          },
+          {
+            icon: "vendor",
+            title: "CRO & Vendor Management｜CRO 与第三方管理",
+            copy:
+              "负责真实世界研究中 CRO 及第三方合作方管理，明确工作范围、关键里程碑、质量要求和交付标准。定期跟踪项目进度、中心执行、数据质量与交付，协调研究中心、数据管理、统计、生物信息、实验室和内部团队。",
           },
           {
             icon: "review",
-            title: "医学监察与数据审阅",
+            title: "Medical Review｜医学核查与数据审阅",
             copy:
-              "在 IIT 与真实世界研究中，可对研究入组、病例信息、临床与样本数据、方案执行和医学问题进行核查、答疑与一致性审阅。能够协同研究者和项目团队推动问题闭环与数据质量提升。",
-          },
-          {
-            icon: "engagement",
-            title: "KOL 管理与医学教育",
-            copy:
-              "具备区域及全国肺癌研究者沟通经验，能够通过访谈、学术会议和项目协作识别专家需求。可将临床洞察转化为医学教育、学术活动和内部培训内容。",
+              "在 IIT 与真实世界研究中，对病例入组、临床与样本信息、方案执行、数据完整性和医学合理性进行核查、答疑与一致性审阅。参与统计结果审核、医学解释和研究结论形成。",
           },
           {
             icon: "evidence",
-            title: "证据生成与医学传播",
+            title: "Evidence Generation & Publication｜证据生成与发表",
             copy:
-              "能够参与生物标志物设计、数据分析和医学解读，并推动摘要、论文、研究报告及会议材料输出。可将研究结果转化为清晰、合规且面向不同受众的医学价值信息。",
+              "将研究设计、CRF、SAP、数据分析和医学解读连接为可发表的证据路径。推动摘要、论文、研究报告和会议材料撰写，并将研究结果转化为专家沟通与医学教育内容。",
           },
         ],
       },
@@ -566,7 +596,7 @@ const SITE_CONTENT = {
       location: "Shanghai, China",
       photoNote: "Professional photo coming soon",
       summary:
-        "Experienced across oncology Medical Affairs, MSL, and translational research roles, with a sustained focus on targeted therapy, immunotherapy, resistance mechanisms, and biomarker research in lung cancer. My experience spans identifying unmet clinical needs, supporting study protocols and data-collection frameworks, coordinating multicenter projects, engaging investigators, conducting medical and data review, interpreting findings, and contributing to publications. I work with investigators, internal cross-functional teams, and external testing, statistics, and data-analysis partners to support enrollment, clinical and biospecimen data collection, milestone tracking, and issue resolution, translating clinical evidence into medical value and scientific communication.",
+        "Experienced across oncology Medical Affairs, MSL, and translational research roles, with a sustained focus on targeted therapy, immunotherapy, resistance mechanisms, and biomarker research in lung cancer. My experience spans identifying unmet clinical needs, designing real-world studies, leading CRF development and SAP authoring, coordinating multicenter delivery, conducting medical and data review, interpreting findings, and contributing to publications. I have managed CROs and third-party partners in real-world studies across progress, quality, and deliverables, coordinating investigators, data management, statistics, bioinformatics, laboratories, and internal teams to close issues and translate clinical evidence into medical value.",
     },
     evidence: {
       eyebrow: "Evidence & Expertise",
@@ -587,10 +617,10 @@ const SITE_CONTENT = {
       },
       strengths: {
         label: "Core Capabilities",
-        tags: ["Medical Strategy", "Clinical Study Management", "Medical Review", "Evidence Generation"],
+        tags: ["Study Design", "CRF / SAP", "CRO & Vendor Management", "Medical Review"],
       },
       note:
-        "Experienced in connecting unmet clinical needs, study design, multicenter project delivery, data interpretation, and scientific communication into an evidence-generation pathway.",
+        "Experienced in connecting study design, CRF and SAP development, multicenter delivery, CRO management, data review, and publication into a real-world evidence-generation pathway.",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -608,7 +638,7 @@ const SITE_CONTENT = {
       "Medical Strategy",
       "Clinical Study Design",
       "Multi-center Project Management",
-      "Medical Monitoring",
+      "Medical Review",
       "KOL Engagement",
       "Scientific Communication",
     ],
@@ -648,12 +678,12 @@ const SITE_CONTENT = {
                 copy: "Contribute to and execute the annual lung cancer medical strategy by integrating investigator engagement, expert interviews, and evidence tracking from ELCC, WCLC, ASCO, and other sources into research priorities, scientific programs, and internal medical recommendations.",
               },
               {
-                title: "Clinical Study Design and Documents",
-                copy: "Support IIT and real-world study design, including target population, eligibility criteria, endpoints, follow-up, and sampling timepoints, and contribute to protocols, data collection forms, follow-up forms, and study management trackers.",
+                title: "Clinical Study Design, CRF, and SAP Development",
+                copy: "Design IITs and real-world studies across target population, eligibility criteria, endpoints, visits, follow-up, and sampling timepoints; lead CRF design and authoring by defining variables, visit structure, field rules, and data-capture logic; and lead SAP authoring across analysis sets, endpoints, variables, statistical methods, subgroup and sensitivity analyses, and missing-data principles.",
               },
               {
-                title: "Multicenter Project Management",
-                copy: "Coordinate national multicenter study timelines, enrollment targets, site communication, sample workflows, and follow-up activities, working with investigators, internal teams, and external testing, statistics, and data-analysis partners to track milestones and close issues.",
+                title: "Multicenter Project, CRO, and Vendor Management",
+                copy: "Manage CROs and third-party partners in real-world studies by defining scope, milestones, quality expectations, and deliverables; track national multicenter progress, site execution, enrollment, samples, follow-up, data quality, and delivery; and coordinate CROs, sites, data management, statistics, bioinformatics, laboratories, and internal teams to address risks, corrective actions, and issue closure.",
               },
               {
                 title: "Medical Review, Query Resolution, and Data Review",
@@ -661,7 +691,7 @@ const SITE_CONTENT = {
               },
               {
                 title: "Evidence Generation, Publications, and Communication",
-                copy: "Contribute to data interpretation and the development of abstracts, manuscripts, study reports, and congress materials, translating findings into KOL communication, medical education, and internal scientific support.",
+                copy: "Review statistical outputs and contribute to medical interpretation and study conclusions, driving the development of abstracts, manuscripts, study reports, and congress materials and translating findings into KOL communication, medical education, and internal scientific support.",
               },
             ],
           },
@@ -716,39 +746,44 @@ const SITE_CONTENT = {
       {
         id: "focus",
         title: "Core Expertise",
-        kicker: "Medical Affairs Capabilities",
-        intro: "Capabilities aligned with Medical Affairs, MSL, and Clinical Medical Manager roles across strategy, study design, project delivery, medical review, KOL engagement, and evidence communication.",
+        kicker: "Clinical Research & Medical Affairs Capabilities",
+        intro: "Capabilities centered on real-world study design, CRF and SAP development, multicenter and CRO management, medical review, and evidence publication.",
         type: "focus",
         items: [
           {
-            icon: "strategy",
-            title: "Oncology Medical Strategy and Disease-area Expertise",
-            copy: "Familiar with NSCLC and SCLC treatment pathways and evolving evidence in targeted therapy, immunotherapy, TKI resistance, ADCs, and biomarkers. Able to integrate evidence tracking and KOL insights into medical strategy, research priorities, and scientific communication.",
+            icon: "study",
+            title: "Clinical Study Design",
+            copy: "Lead or drive IIT and real-world study design from unmet clinical needs and evidence objectives. Define study objectives, target populations, eligibility criteria, primary and secondary endpoints, visits, follow-up, and sampling timepoints.",
           },
           {
-            icon: "documents",
-            title: "Clinical Study Design and Document Development",
-            copy: "Experienced in supporting IIT and real-world study design from unmet clinical needs, including target population, eligibility criteria, endpoints, follow-up, and sampling timepoints. Able to contribute to protocols, data collection forms, follow-up forms, and study management documents.",
+            icon: "crf",
+            title: "CRF Development",
+            copy: "Lead CRF design and authoring by defining clinical variables, visit structure, field rules, and data-capture logic from the protocol, endpoints, and analysis needs. Focus on completeness, medical plausibility, and statistical analyzability while coordinating review and iteration with investigators, CRO, data, and statistics teams.",
           },
           {
-            icon: "network",
-            title: "Multicenter Clinical Project Management",
-            copy: "Experienced in coordinating national multicenter timelines, site initiation, enrollment targets, sample workflows, follow-up, and study milestones. Able to work across investigators, internal teams, and external testing, statistics, and data-analysis partners.",
+            icon: "analysis",
+            title: "Statistical Analysis Plan",
+            copy: "Lead SAP authoring across analysis sets, primary and secondary endpoints, variable definitions, statistical methods, subgroup analyses, sensitivity analyses, and missing-data principles. Align analysis logic with statisticians and drive its implementation.",
+          },
+          {
+            icon: "project",
+            title: "Multi-center Project Management",
+            copy: "Manage national multicenter real-world study timelines, enrollment targets, site communication, samples, follow-up, data, and key milestones. Identify execution risks and deviations and coordinate corrective actions and issue closure.",
+          },
+          {
+            icon: "vendor",
+            title: "CRO and Vendor Management",
+            copy: "Manage CROs and third-party partners in real-world studies by defining scope, milestones, quality expectations, and delivery standards. Track progress, site execution, data quality, and deliverables while coordinating sites, data management, statistics, bioinformatics, laboratories, and internal teams.",
           },
           {
             icon: "review",
-            title: "Medical Monitoring and Data Review",
-            copy: "Within IITs and real-world studies, able to review enrollment, case information, clinical and biospecimen data, protocol implementation, and study-related medical questions for consistency and issue resolution. Experienced in working with investigators and project teams to support data quality and issue closure.",
-          },
-          {
-            icon: "engagement",
-            title: "KOL Management and Medical Education",
-            copy: "Experienced in regional and national engagement with lung cancer investigators through interviews, scientific meetings, and study collaboration. Able to translate clinical insights into medical education, scientific programs, and internal training.",
+            title: "Medical Review",
+            copy: "Within IITs and real-world studies, review enrollment cases, clinical and biospecimen information, protocol implementation, data completeness, and medical plausibility for consistency and issue resolution. Review statistical outputs and contribute to medical interpretation and study conclusions.",
           },
           {
             icon: "evidence",
-            title: "Evidence Generation and Scientific Communication",
-            copy: "Experienced in contributing to biomarker strategy, data analysis, and medical interpretation, and in developing abstracts, manuscripts, study reports, and congress materials. Able to translate findings into clear, compliant medical value communication for different audiences.",
+            title: "Evidence Generation and Publication",
+            copy: "Connect study design, CRF, SAP, data analysis, and medical interpretation into a publication-ready evidence pathway. Drive abstracts, manuscripts, study reports, and congress materials and translate findings into KOL communication and medical education.",
           },
         ],
       },

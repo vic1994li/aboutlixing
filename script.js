@@ -351,6 +351,11 @@ function renderFocus(items) {
     review: "✓",
     engagement: "◉",
     evidence: "↗",
+    study: "◎",
+    crf: "▤",
+    analysis: "Σ",
+    project: "◇",
+    vendor: "↔",
   };
 
   return `

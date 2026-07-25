@@ -598,6 +598,12 @@ li {
   line-height: 1.4;
 }
 
+.focus-card:last-child:nth-child(3n + 1),
+.role-card:last-child:nth-child(3n + 1) {
+  grid-column: 1 / -1;
+  min-height: auto;
+}
+
 .project-card button {
   width: 100%;
   padding: 20px;
@@ -1150,6 +1156,11 @@ li {
   .role-grid,
   .evidence-grid {
     grid-template-columns: 1fr;
+  }
+
+  .focus-card:last-child:nth-child(3n + 1),
+  .role-card:last-child:nth-child(3n + 1) {
+    grid-column: auto;
   }
 
   .skills-strip,
