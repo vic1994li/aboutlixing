@@ -1,19 +1,21 @@
 const state = {
   lang: "zh",
-  activeTab: "projects",
+  activeTab: "experience",
   activeProjects: new Set(),
   touchStartX: 0,
   touchStartY: 0,
 };
 
 const $ = (selector) => document.querySelector(selector);
+const MODULE_TAB_ORDER = ["experience", "focus", "projects", "papers", "education"];
 
 function t(path) {
   return path.split(".").reduce((value, key) => value?.[key], SITE_CONTENT[state.lang]);
 }
 
 function currentTabs() {
-  return SITE_CONTENT[state.lang].tabs.filter((tab) => ["focus", "projects", "papers"].includes(tab.id));
+  const tabs = SITE_CONTENT[state.lang].tabs;
+  return MODULE_TAB_ORDER.map((id) => tabs.find((tab) => tab.id === id)).filter(Boolean);
 }
 
 function setTextContent() {
@@ -161,7 +163,17 @@ function renderTimeline(items) {
                 <p>${item.role}</p>
               </div>
               <ul>
-                ${item.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
+                ${item.bullets
+                  .map((bullet) => {
+                    if (typeof bullet === "string") return `<li>${bullet}</li>`;
+                    return `
+                      <li class="experience-dimension">
+                        <strong>${bullet.title}</strong>
+                        <span>${bullet.copy}</span>
+                      </li>
+                    `;
+                  })
+                  .join("")}
               </ul>
             </section>
           `
@@ -332,9 +344,30 @@ function renderPapers() {
 }
 
 function renderFocus(items) {
+  const icons = {
+    strategy: "◎",
+    documents: "▤",
+    network: "◇",
+    review: "✓",
+    engagement: "◉",
+    evidence: "↗",
+  };
+
   return `
-    <div class="focus-showcase">
-      <img class="focus-overview-image" src="./assets/focus/focus-overview.jpg" alt="${state.lang === "zh" ? "核心能力图文总览" : "Core capabilities visual overview"}" loading="lazy" />
+    <div class="focus-grid">
+      ${items
+        .map(
+          (item) => `
+            <article class="focus-card">
+              <span class="focus-icon" aria-hidden="true">${icons[item.icon] || "•"}</span>
+              <div>
+                <h4>${item.title}</h4>
+                <p>${item.copy}</p>
+              </div>
+            </article>
+          `
+        )
+        .join("")}
     </div>
   `;
 }
@@ -355,13 +388,6 @@ function renderEducation(items) {
         .join("")}
     </div>
   `;
-}
-
-function showToast(message) {
-  const toast = $("#toast");
-  toast.textContent = message;
-  toast.classList.add("show");
-  window.setTimeout(() => toast.classList.remove("show"), 2200);
 }
 
 function bindSwipe() {
@@ -411,13 +437,9 @@ $("#languageToggle").addEventListener("click", () => {
   render();
 });
 
-$("#resumeButton").addEventListener("click", () => {
-  showToast(SITE_CONTENT[state.lang].actions.resumePending);
-});
-
-$("#exploreProjects").addEventListener("click", (event) => {
+$("#exploreExperience").addEventListener("click", (event) => {
   event.preventDefault();
-  activateTab("projects", true);
+  activateTab("experience", true);
 });
 
 bindSwipe();

@@ -6,7 +6,7 @@
     <title>Li Xing | Medical Affairs Portfolio</title>
     <meta
       name="description"
-      content="Li Xing bilingual medical affairs portfolio and resume website."
+      content="Li Xing bilingual portfolio for oncology Medical Affairs, MSL, Clinical Medical Manager, and translational medicine roles."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -27,7 +27,6 @@
           <button class="language-toggle" type="button" id="languageToggle" aria-live="polite">
             EN
           </button>
-          <a class="ghost-link" href="#contact" data-i18n="actions.contact">联系我</a>
         </div>
       </header>
 
@@ -41,16 +40,22 @@
             </div>
 
             <div class="identity-block">
-              <p class="eyebrow" data-i18n="hero.eyebrow">Medical Affairs · Precision Oncology · ctDNA/MRD</p>
+              <p class="eyebrow" data-i18n="hero.eyebrow">肿瘤医学事务 · 临床研究管理 · 转化医学</p>
               <h1 data-i18n="hero.name">李行</h1>
               <p class="location-line" data-i18n="hero.location">Shanghai, China</p>
               <p class="hero-copy" data-i18n="hero.summary"></p>
 
               <div class="hero-actions">
-                <a class="primary-button" href="#modules" id="exploreProjects" data-i18n="actions.explore">查看代表项目</a>
-                <button class="secondary-button" type="button" id="resumeButton" data-i18n="actions.resume">
+                <a class="primary-button" href="#modules" id="exploreExperience" data-i18n="actions.explore">查看工作经历</a>
+                <a
+                  class="secondary-button"
+                  href="./assets/resume/Li_Xing_CV.pdf"
+                  id="resumeButton"
+                  download
+                  data-i18n="actions.resume"
+                >
                   下载简历
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -114,8 +119,6 @@
         </section>
       </main>
     </div>
-
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="./content.js"></script>
     <script src="./script.js"></script>

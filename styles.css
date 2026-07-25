@@ -99,6 +99,7 @@ button {
 
 .top-module-nav {
   gap: 8px;
+  min-width: 0;
   padding: 4px;
   border-radius: 8px;
   background: var(--panel-soft);
@@ -514,6 +515,32 @@ h1 {
   line-height: 1.6;
 }
 
+.timeline-item ul {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+}
+
+.experience-dimension {
+  margin: 0;
+}
+
+.experience-dimension strong,
+.experience-dimension span {
+  display: block;
+}
+
+.experience-dimension strong {
+  margin-bottom: 3px;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.experience-dimension span {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
 ul {
   margin: 0;
   padding-left: 19px;
@@ -532,12 +559,43 @@ li {
   gap: 14px;
 }
 
+.focus-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .project-card,
 .focus-card,
 .education-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel-soft);
+}
+
+.focus-card {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
+  align-content: start;
+  min-height: 230px;
+  padding: 20px;
+}
+
+.focus-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(44, 122, 123, 0.24);
+  border-radius: 8px;
+  color: var(--accent-deep);
+  background: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.focus-card h4 {
+  margin-top: 2px;
+  line-height: 1.4;
 }
 
 .project-card button {
@@ -778,7 +836,7 @@ li {
 }
 
 .role-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .case-info-card,
@@ -962,21 +1020,6 @@ li {
   padding: 20px;
 }
 
-.focus-showcase {
-  display: grid;
-  gap: 16px;
-}
-
-.focus-overview-image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel-soft);
-}
-
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.9fr);
@@ -1028,31 +1071,6 @@ li {
   background: transparent;
 }
 
-.toast {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  z-index: 20;
-  max-width: min(360px, calc(100% - 44px));
-  padding: 14px 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  color: var(--ink);
-  background: #fff;
-  box-shadow: var(--shadow);
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
-
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (max-width: 980px) {
   .page-shell {
     width: min(100% - 28px, 760px);
@@ -1087,6 +1105,7 @@ li {
     min-height: auto;
   }
 
+  .focus-grid,
   .role-grid,
   .evidence-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

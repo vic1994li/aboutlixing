@@ -24,14 +24,14 @@ const featuredProject = {
     companyTalkPhoto: "./assets/projects/drive/company-talk.jpg",
   },
   zh: {
-    label: "Featured Project · MRD · NSCLC · Real-world Evidence",
-    title: "驱动基因突变肺癌 MRD 产品上市前真实世界研究",
+    label: "Featured Project · NSCLC · MRD · Evidence Generation",
+    title: "驱动基因突变NSCLC全国多中心临床研究与上市前证据生成",
     summary:
-      "作为项目负责人，整体推进首个聚焦驱动基因突变肺癌设计的 MRD 产品上市前真实世界研究，覆盖研究设计、患者入组、临床沟通、数据分析、文章发表与医学传播全流程。",
+      "作为项目负责人，推进驱动基因突变 NSCLC 全国多中心真实世界研究，覆盖研究方案与文件设计、入组规划、中心协作、医学核查、数据解读、论文发表及医学传播，为 MRD 相关上市前证据生成提供支持。",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
-      "首个聚焦驱动基因突变肺癌设计的 MRD 产品研究",
-      "纳入目前 MRD 研究中最大规模的驱动基因突变肺癌患者",
+      "全国多中心真实世界研究",
+      "驱动基因突变 NSCLC 与 MRD",
       "ClinicalTrials.gov 注册",
       "ESMO Asia 2025 口头汇报",
     ],
@@ -39,30 +39,38 @@ const featuredProject = {
       clinicalNeed:
         "肺癌驱动基因突变患者在围术期治疗和术后复发风险管理中，仍缺乏兼具临床可及性、成本可控性和分子特异性的 MRD 监测策略。传统 tumor-informed MRD 方法通常依赖大 panel 或 WES/WGS，流程复杂、成本较高，限制了其在真实临床场景中的规模化应用。",
       innovation:
-        "本研究围绕驱动基因突变肺癌患者设计 MRD 产品上市前真实世界研究路径，聚焦核心驱动事件在术后 ctDNA 监测中的价值，探索 driver-informed MRD 在复发风险评估、长期随访和临床转化中的应用潜力，为产品上市前证据生成和临床认知建立提供支持。",
+        "本研究围绕驱动基因突变 NSCLC 设计全国多中心真实世界证据路径，聚焦核心驱动事件在术后 ctDNA 监测中的价值，探索 driver-informed MRD 在复发风险评估、长期随访和临床转化中的应用潜力，为上市前证据生成和医学沟通提供支持。",
       valueSummary:
-        "这个项目系统体现了我在 Medical Affairs 和转化研究中的复合能力：能够从临床未满足需求和产品上市前证据需求出发，参与并推动研究设计、患者入组、临床沟通、数据分析和文章发表；同时能够将研究结果进一步转化为会议汇报、专家沟通和医学宣讲内容，支持 driver-informed MRD 产品在驱动基因突变肺癌中的临床认知建立和价值传递。",
+        "该项目体现了我在肿瘤医学事务与转化研究中的复合能力：能够从临床未满足需求和上市前证据需求出发，推动研究设计与文件撰写、入组规划、多中心协作、医学核查、数据解读和论文发表，并将研究结果转化为会议汇报、专家沟通与医学教育内容。",
     },
     roles: [
       {
         title: "Study Design｜研究设计",
-        copy: "参与并推动研究框架设计，明确目标人群、检测节点、随访策略、关键终点和真实世界证据生成路径。",
+        copy: "参与并推动研究框架设计，明确目标人群、关键终点、采样节点、随访策略和真实世界证据路径。",
       },
       {
-        title: "Enrollment Control｜患者入组把关",
-        copy: "负责入组标准理解、病例筛选逻辑把关，并与临床团队持续沟通入组流程，保障研究队列的规范性和连续性。",
+        title: "Clinical Study Documents｜研究文件",
+        copy: "参与研究方案、数据采集表、随访表及项目管理表格的设计与迭代，支持各中心一致执行。",
       },
       {
-        title: "Clinical Coordination｜临床沟通与项目推进",
-        copy: "持续协调研究者、临床团队和内部跨部门资源，推进样本采集、随访信息整理和研究执行中的关键问题解决。",
+        title: "Enrollment Planning｜入组规划",
+        copy: "结合入排标准、中心条件和研究时间表制定入组目标，持续跟进病例筛选与队列进展。",
       },
       {
-        title: "Data Analysis｜数据分析与结果解读",
-        copy: "参与后续数据分析和结果解读，围绕 MRD 状态、复发风险、检测时间点价值及驱动基因亚组形成医学结论。",
+        title: "Multi-center Coordination｜多中心协作",
+        copy: "协调研究者、内部团队及检测、统计和数据分析合作方，推进样本、随访、数据与关键节点管理。",
       },
       {
-        title: "Publication & Communication｜文章发表与医学传播",
-        copy: "推动研究摘要、论文和会议材料输出，并在后续研讨会中代表公司介绍研究设计、核心结果和产品临床转化价值。",
+        title: "Medical Review｜医学核查",
+        copy: "围绕入排标准、病例信息、数据一致性、方案执行及医学问题开展核查、答疑与闭环。",
+      },
+      {
+        title: "Data Interpretation｜数据解读",
+        copy: "参与研究数据分析和医学解读，围绕 MRD 状态、复发风险、检测时间点及驱动基因亚组形成结论。",
+      },
+      {
+        title: "Publication & Communication｜发表与传播",
+        copy: "推动摘要、论文、研究报告和会议材料输出，并在医学活动中介绍研究设计、结果与临床价值。",
       },
     ],
     timeline: [
@@ -81,7 +89,7 @@ const featuredProject = {
       {
         phase: "Phase 3｜Enrollment and Study Execution",
         title: "患者入组与研究执行推进",
-        copy: "在入组过程中持续参与病例筛选、入组把关、临床沟通、样本采集和随访信息整理，保障真实世界研究数据积累。",
+        copy: "在入组过程中持续参与病例筛选、中心沟通、样本与随访管理，并对研究执行中的医学问题进行核查与答疑。",
       },
       {
         phase: "Phase 4｜ESMO Asia 2025 Oral Presentation",
@@ -91,8 +99,8 @@ const featuredProject = {
       },
       {
         phase: "Phase 5｜Medical Communication",
-        title: "后续医学宣讲与产品价值传递",
-        copy: "在研究披露后，围绕研究设计、核心结果和 driver-informed MRD 产品差异化价值，在多个研讨会中代表公司进行医学宣讲。",
+        title: "后续医学宣讲与证据转化",
+        copy: "在研究披露后，围绕研究设计、核心结果和 driver-informed MRD 的临床价值，在多个研讨会中代表公司进行医学宣讲。",
         imageKey: "companyTalkPhoto",
       },
     ],
@@ -119,7 +127,7 @@ const featuredProject = {
       {
         type: "Medical Communication",
         title: "代表公司进行研究宣讲",
-        copy: "在后续研讨会中代表公司介绍研究设计、核心结果和 driver-informed MRD 产品的临床转化价值。",
+        copy: "在后续研讨会中代表公司介绍研究设计、核心结果和 driver-informed MRD 的临床转化价值。",
         imageKey: "companyTalkPhoto",
       },
       {
@@ -132,14 +140,14 @@ const featuredProject = {
     ],
   },
   en: {
-    label: "Featured Project · MRD · NSCLC · Real-world Evidence",
-    title: "Pre-market Real-world Study of a Driver-informed MRD Product in Driver-mutant Lung Cancer",
+    label: "Featured Project · NSCLC · MRD · Evidence Generation",
+    title: "National Multicenter Clinical Study and Pre-market Evidence Generation in Driver-mutant NSCLC",
     summary:
-      "As the project lead, I drove a pre-market real-world study of the first MRD product specifically designed for driver-mutant lung cancer, covering study design, patient enrollment, clinical coordination, data analysis, publication development, and medical communication.",
+      "As project lead, I coordinated a national multicenter real-world study in driver-mutant NSCLC, supporting study design and document development, enrollment planning, site coordination, medical review, data interpretation, publication development, and scientific communication for pre-market MRD evidence generation.",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
-      "First MRD product study designed for driver-mutant lung cancer",
-      "Largest driver-mutant lung cancer cohort in MRD research to date",
+      "National multicenter real-world study",
+      "Driver-mutant NSCLC and MRD",
       "Registered on ClinicalTrials.gov",
       "Accepted as an oral presentation at ESMO Asia 2025",
     ],
@@ -147,30 +155,38 @@ const featuredProject = {
       clinicalNeed:
         "Patients with driver-mutant lung cancer still lack an MRD monitoring strategy that is clinically accessible, cost-conscious, and molecularly specific in the perioperative and postoperative setting. Conventional tumor-informed MRD approaches often rely on large panels or WES/WGS, which may increase workflow complexity and cost, limiting broad adoption in real-world clinical practice.",
       innovation:
-        "This study established a pre-market real-world evidence framework for an MRD product specifically designed for driver-mutant lung cancer. By focusing on key driver alterations and postoperative ctDNA monitoring, the study explored the clinical utility of driver-informed MRD for recurrence risk assessment, longitudinal surveillance, and product value translation.",
+        "This study established a national multicenter real-world evidence pathway in driver-mutant NSCLC. By focusing on key driver alterations and postoperative ctDNA monitoring, it explored the clinical utility of driver-informed MRD for recurrence risk assessment, longitudinal surveillance, and translational evidence generation.",
       valueSummary:
-        "This project demonstrates my ability to drive a translational evidence-generation process from clinical unmet need and pre-market product validation to study design, patient enrollment, clinical coordination, data interpretation, publication development, and medical communication. It also reflects my experience in translating study findings into conference presentations, expert engagement, and scientific communication to support clinical awareness and value delivery of a driver-informed MRD product in driver-mutant lung cancer.",
+        "This project demonstrates my ability to connect unmet clinical needs with study design and document development, enrollment planning, multicenter coordination, medical review, data interpretation, publication development, and scientific communication within a real-world research setting. It also reflects my experience translating study findings into conference presentations, expert engagement, and medical education.",
     },
     roles: [
       {
         title: "Study Design",
-        copy: "Contributed to and drove the study framework, including target population, sampling timepoints, follow-up strategy, key endpoints, and real-world evidence generation pathway.",
+        copy: "Contributed to the study framework, including target population, key endpoints, sampling timepoints, follow-up strategy, and the real-world evidence pathway.",
       },
       {
-        title: "Enrollment Control",
-        copy: "Oversaw enrollment criteria interpretation and patient screening logic, while working closely with clinical teams to ensure cohort quality and continuity.",
+        title: "Clinical Study Documents",
+        copy: "Supported the development and iteration of the protocol, data collection forms, follow-up forms, and project tracking tools for consistent site execution.",
       },
       {
-        title: "Clinical Coordination",
-        copy: "Coordinated investigators, clinical teams, and internal cross-functional resources to support sample collection, follow-up data capture, and issue resolution throughout study execution.",
+        title: "Enrollment Planning",
+        copy: "Translated eligibility criteria, site conditions, and study timelines into enrollment targets while tracking patient screening and cohort progress.",
       },
       {
-        title: "Data Analysis",
-        copy: "Participated in data analysis and medical interpretation, focusing on MRD status, recurrence risk, timepoint-specific detection value, and driver gene subgroup findings.",
+        title: "Multi-center Coordination",
+        copy: "Coordinated investigators, internal teams, and testing, statistics, and data-analysis partners across samples, follow-up data, and key milestones.",
       },
       {
-        title: "Publication & Communication",
-        copy: "Supported abstract, manuscript, and conference material development, and represented the company in scientific seminars to communicate study design, key findings, and clinical value.",
+        title: "Medical Review",
+        copy: "Reviewed eligibility, case information, data consistency, protocol implementation, and study-related medical questions to support issue resolution.",
+      },
+      {
+        title: "Data Interpretation",
+        copy: "Contributed to data analysis and medical interpretation focused on MRD status, recurrence risk, sampling timepoints, and driver-gene subgroups.",
+      },
+      {
+        title: "Publication & Medical Communication",
+        copy: "Supported abstracts, manuscripts, study reports, and congress materials, and communicated the study design, findings, and clinical value in scientific forums.",
       },
     ],
     timeline: [
@@ -189,7 +205,7 @@ const featuredProject = {
       {
         phase: "Phase 3｜Enrollment and Study Execution",
         title: "Enrollment and Study Execution",
-        copy: "Throughout enrollment, I supported patient screening, enrollment control, clinical communication, sample collection, and follow-up data organization to ensure real-world cohort development.",
+        copy: "Throughout enrollment, I supported patient screening, site communication, sample and follow-up management, and medical review of study-execution questions.",
       },
       {
         phase: "Phase 4｜ESMO Asia 2025 Oral Presentation",
@@ -199,8 +215,8 @@ const featuredProject = {
       },
       {
         phase: "Phase 5｜Medical Communication",
-        title: "Medical Communication and Product Value Delivery",
-        copy: "After study disclosure, I represented the company in scientific seminars to communicate the study design, key findings, and differentiated clinical value of driver-informed MRD.",
+        title: "Medical Communication and Evidence Translation",
+        copy: "After study disclosure, I represented the company in scientific seminars to communicate the study design, key findings, and clinical value of driver-informed MRD.",
         imageKey: "companyTalkPhoto",
       },
     ],
@@ -227,7 +243,7 @@ const featuredProject = {
       {
         type: "Medical Communication",
         title: "Representing the Company in Scientific Seminars",
-        copy: "I represented the company in scientific seminars to communicate the study design, key results, and clinical value of the driver-informed MRD product.",
+        copy: "I represented the company in scientific seminars to communicate the study design, key results, and clinical value of driver-informed MRD.",
         imageKey: "companyTalkPhoto",
       },
       {
@@ -245,21 +261,20 @@ const SITE_CONTENT = {
   zh: {
     meta: {
       name: "李行",
-      roleShort: "Medical Affairs",
+      roleShort: "肿瘤医学事务",
     },
     actions: {
       contact: "联系我",
-      explore: "查看代表项目",
+      explore: "查看工作经历",
       resume: "下载简历",
-      resumePending: "简历 PDF 待替换",
     },
     hero: {
-      eyebrow: "Medical Affairs · Precision Oncology · ctDNA/MRD",
+      eyebrow: "肿瘤医学事务 · 临床研究管理 · 转化医学",
       name: "李行",
       location: "Shanghai, China",
       photoNote: "职业照待补充",
       summary:
-        "聚焦肿瘤精准医学与液体活检转化研究，具备分子诊断、ctDNA/MRD、多组学分析及医学内容策略经验，能够连接临床证据、产品价值与医学沟通场景。",
+        "具备肿瘤领域 Medical Affairs、MSL 及转化研究工作经验，长期聚焦肺癌靶向治疗、免疫治疗、耐药机制及生物标志物研究。具备从临床未满足需求识别、研究方案及数据采集框架设计，到多中心项目推进、研究者沟通、医学核查、数据解读和论文发表的完整经验。能够协调研究者、内部跨部门团队及第三方合作方，推动患者入组、临床与样本数据采集、研究节点管理及问题闭环，并将临床证据转化为产品医学价值和专家沟通内容。",
     },
     evidence: {
       eyebrow: "证据积累与专业能力",
@@ -276,14 +291,14 @@ const SITE_CONTENT = {
       },
       focus: {
         label: "专业聚焦",
-        tags: ["精准肿瘤学", "非小细胞肺癌", "转化研究", "医学策略"],
+        tags: ["精准肿瘤学", "肺癌", "ctDNA / MRD", "转化研究"],
       },
       strengths: {
         label: "核心能力",
-        tags: ["研究设计", "临床沟通", "数据解读", "医学传播"],
+        tags: ["医学策略", "临床研究管理", "医学核查", "证据生成"],
       },
       note:
-        "持续参与肿瘤精准医学与液体活检相关研究，能够将临床问题、研究设计、数据结果和医学传播串联成完整的证据转化路径。",
+        "能够将临床未满足需求、研究设计、多中心项目推进、数据解读与医学传播串联为完整的证据生成路径。",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -293,20 +308,24 @@ const SITE_CONTENT = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "期待围绕医学事务、肿瘤精准医学与转化研究进一步沟通",
-      copy: "如果你希望了解我的项目经历、科研产出或医学策略相关经验，欢迎通过以下方式联系我。",
+      title: "期待与医学事务、MSL及临床医学团队进一步沟通",
+      copy: "如需进一步了解我的肿瘤医学策略、临床研究管理、专家沟通或证据生成经验，欢迎通过以下方式联系我。",
     },
     skills: [
-      "Precision Oncology",
-      "NSCLC",
-      "Translational Research",
       "Medical Strategy",
+      "Clinical Study Design",
+      "Multi-center Project Management",
+      "Medical Monitoring",
+      "KOL Engagement",
+      "Scientific Communication",
     ],
     navItems: [
       { label: "首页", target: "overview" },
+      { label: "工作经历", target: "experience" },
       { label: "核心能力", target: "focus" },
       { label: "代表项目", target: "projects" },
       { label: "科研产出", target: "papers" },
+      { label: "教育背景", target: "education" },
       { label: "联系我", target: "contact" },
     ],
     contacts: [
@@ -321,9 +340,9 @@ const SITE_CONTENT = {
     tabs: [
       {
         id: "experience",
-        title: "工作履历",
+        title: "工作经历",
         kicker: "3 段核心经历",
-        intro: "从区域医学支持到中央医学策略，持续围绕肿瘤精准诊疗与临床转化建立医学影响力。",
+        intro: "从区域 MSL 与医学支持到中央医学策略及临床研究管理，持续积累肿瘤医学事务、研究者沟通和证据生成经验。",
         type: "timeline",
         items: [
           {
@@ -331,10 +350,26 @@ const SITE_CONTENT = {
             company: "厦门艾德生物医药有限公司",
             role: "医学科学家 | 汇报对象：CMO",
             bullets: [
-              "制定并推动肺癌方向年度医学策略，覆盖专家洞察、证据解读、学术活动与内部医学支持。",
-              "维护国内头部肺癌 KOL 网络，将专家反馈沉淀为产品定位、研究设计和医学沟通要点。",
-              "主导或参与中央医学临床研究方案设计、研究推进和数据解读，支撑液体活检及创新治疗方向转化。",
-              "跟踪 ELCC、WCLC、ASCO 等国际会议进展，输出面向内部团队和专家沟通的医学材料。",
+              {
+                title: "医学策略与 KOL 洞察",
+                copy: "参与制定并推动肺癌年度医学策略，通过研究者沟通、专家访谈及 ELCC、WCLC、ASCO 等证据追踪识别临床需求，将洞察转化为研究方向、学术活动和内部医学建议。",
+              },
+              {
+                title: "临床研究设计及研究文件撰写",
+                copy: "围绕 IIT 和真实世界研究参与方案设计，支持目标人群、入排标准、终点、随访与采样节点规划，并撰写或迭代研究方案、数据采集表、随访表及研究管理表格。",
+              },
+              {
+                title: "多中心项目管理",
+                copy: "推进全国多中心项目时间表、入组目标、中心沟通、样本流转和随访管理，协调研究者、内部跨部门团队及第三方检测、统计和数据分析合作方，跟进关键节点与问题闭环。",
+              },
+              {
+                title: "医学核查、医学答疑和数据审阅",
+                copy: "在 IIT 与真实世界研究中，围绕病例入组、临床与样本信息、方案执行和数据一致性开展医学核查与答疑，支持研究问题识别、跨团队沟通和执行纠偏。",
+              },
+              {
+                title: "证据生成、论文发表和医学传播",
+                copy: "参与研究数据解读，推动摘要、论文、研究报告和会议材料撰写，将研究结果转化为专家沟通、医学教育和内部科学支持内容。",
+              },
             ],
           },
           {
@@ -342,9 +377,9 @@ const SITE_CONTENT = {
             company: "至本医疗（上海）股份有限公司",
             role: "MSL 经理 | 汇报对象：医学产品部总监",
             bullets: [
-              "负责上海、江苏、浙江区域医学管理，围绕检测产品建立区域专家沟通和学术支持体系。",
-              "通过专家会议、KOL 拜访和医学讨论提升临床端对检测产品价值的理解与认可。",
-              "支持销售和产品团队理解临床场景、检测价值和专家关注点，提升跨部门协作效率。",
+              "负责上海、江苏、浙江区域肿瘤医学事务与 KOL 沟通，建立区域学术支持网络。",
+              "通过专家会议、KOL 拜访和医学讨论收集临床洞察，支持精准诊疗相关证据沟通。",
+              "为内部团队提供疾病领域、临床场景和科学证据支持，提升跨部门医学协作效率。",
             ],
           },
           {
@@ -388,33 +423,45 @@ const SITE_CONTENT = {
       {
         id: "focus",
         title: "核心能力",
-        kicker: "Therapeutic Focus",
-        intro: "围绕肿瘤医学事务工作所需的疾病理解、证据转化、研究设计和专家沟通能力组织。",
+        kicker: "Medical Affairs Capabilities",
+        intro: "围绕药企医学经理、MSL 及 Clinical Medical Manager 岗位所需能力，覆盖策略、研究、项目、医学审阅、专家合作与证据传播。",
         type: "focus",
         items: [
           {
-            title: "肺癌治疗格局理解",
-            image: "./assets/focus/lung-landscape.jpg",
+            icon: "strategy",
+            title: "肿瘤医学策略与疾病领域理解",
             copy:
-              "熟悉 NSCLC 与 SCLC 主要治疗路径，持续关注靶向治疗、免疫治疗、TKI 耐药和 ADC 等创新方向。",
+              "熟悉 NSCLC 与 SCLC 主要治疗路径，持续关注靶向治疗、免疫治疗、TKI 耐药、ADC 及生物标志物进展。能够结合证据追踪与专家洞察，支持年度医学策略、研究方向和医学沟通重点制定。",
           },
           {
-            title: "转化医学与生物标志物",
-            image: "./assets/focus/biomarkers.jpg",
+            icon: "documents",
+            title: "临床研究设计与文件撰写",
             copy:
-              "具备从临床问题出发设计研究、解读数据并形成医学论证的经验，能够连接检测价值、疗效预测和临床决策。",
+              "具备 IIT 与真实世界研究参与经验，能够从未满足临床需求出发支持目标人群、入排标准、终点、随访和采样节点设计。可参与撰写研究方案、数据采集表、随访表及项目管理文件。",
           },
           {
-            title: "KOL 洞察与医学策略",
-            image: "./assets/focus/kol-strategy.jpg",
+            icon: "network",
+            title: "多中心临床项目管理",
             copy:
-              "能够通过专家沟通提炼真实临床需求，将 insights 转化为学术活动设计、研究方向和内部策略建议。",
+              "能够围绕研究时间表、中心启动、入组目标、样本流转、随访和关键节点推进全国多中心项目。具备协调研究者、内部团队及外部检测、统计和数据分析合作方的经验。",
           },
           {
-            title: "临床研究设计",
-            image: "./assets/focus/study-design.jpg",
+            icon: "review",
+            title: "医学监察与数据审阅",
             copy:
-              "具备丰富临床真实世界研究参与经历，能够从未满足临床问题出发，结合现有研究进展调研、样本量计算、生物标志物挖掘等方法，设计具有科学价值与临床转化意义的研究方案。",
+              "在 IIT 与真实世界研究中，可对研究入组、病例信息、临床与样本数据、方案执行和医学问题进行核查、答疑与一致性审阅。能够协同研究者和项目团队推动问题闭环与数据质量提升。",
+          },
+          {
+            icon: "engagement",
+            title: "KOL 管理与医学教育",
+            copy:
+              "具备区域及全国肺癌研究者沟通经验，能够通过访谈、学术会议和项目协作识别专家需求。可将临床洞察转化为医学教育、学术活动和内部培训内容。",
+          },
+          {
+            icon: "evidence",
+            title: "证据生成与医学传播",
+            copy:
+              "能够参与生物标志物设计、数据分析和医学解读，并推动摘要、论文、研究报告及会议材料输出。可将研究结果转化为清晰、合规且面向不同受众的医学价值信息。",
           },
         ],
       },
@@ -510,17 +557,16 @@ const SITE_CONTENT = {
     },
     actions: {
       contact: "Contact",
-      explore: "View Selected Projects",
+      explore: "View Experience",
       resume: "Download CV",
-      resumePending: "CV PDF pending",
     },
     hero: {
-      eyebrow: "Medical Affairs · Precision Oncology · ctDNA/MRD",
+      eyebrow: "Medical Affairs · Oncology Clinical Research · Translational Medicine",
       name: "Li Xing",
       location: "Shanghai, China",
       photoNote: "Professional photo coming soon",
       summary:
-        "A medical affairs and translational oncology professional focused on precision diagnostics, liquid biopsy, and evidence generation. Experienced in bridging clinical data, scientific communication, and product value strategy in oncology.",
+        "Experienced across oncology Medical Affairs, MSL, and translational research roles, with a sustained focus on targeted therapy, immunotherapy, resistance mechanisms, and biomarker research in lung cancer. My experience spans identifying unmet clinical needs, supporting study protocols and data-collection frameworks, coordinating multicenter projects, engaging investigators, conducting medical and data review, interpreting findings, and contributing to publications. I work with investigators, internal cross-functional teams, and external testing, statistics, and data-analysis partners to support enrollment, clinical and biospecimen data collection, milestone tracking, and issue resolution, translating clinical evidence into medical value and scientific communication.",
     },
     evidence: {
       eyebrow: "Evidence & Expertise",
@@ -537,14 +583,14 @@ const SITE_CONTENT = {
       },
       focus: {
         label: "Professional Focus",
-        tags: ["Precision Oncology", "NSCLC", "Translational Research", "Medical Strategy"],
+        tags: ["Precision Oncology", "Lung Cancer", "ctDNA / MRD", "Translational Research"],
       },
       strengths: {
         label: "Core Capabilities",
-        tags: ["Study Design", "Clinical Communication", "Data Interpretation", "Medical Communication"],
+        tags: ["Medical Strategy", "Clinical Study Management", "Medical Review", "Evidence Generation"],
       },
       note:
-        "Experienced in translating clinical questions, study design, data interpretation, and scientific communication into evidence-driven medical value.",
+        "Experienced in connecting unmet clinical needs, study design, multicenter project delivery, data interpretation, and scientific communication into an evidence-generation pathway.",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -554,21 +600,25 @@ const SITE_CONTENT = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Let’s Connect on Medical Affairs, Precision Oncology, and Translational Research",
+      title: "Let’s Connect on Medical Affairs, MSL, and Clinical Medical Roles",
       copy:
-        "For discussions related to medical affairs, oncology evidence generation, or translational research experience, please feel free to get in touch.",
+        "For discussions about oncology medical strategy, clinical study management, KOL engagement, or evidence generation experience, please feel free to get in touch.",
     },
     skills: [
-      "Precision Oncology",
-      "NSCLC",
-      "Translational Research",
       "Medical Strategy",
+      "Clinical Study Design",
+      "Multi-center Project Management",
+      "Medical Monitoring",
+      "KOL Engagement",
+      "Scientific Communication",
     ],
     navItems: [
       { label: "Overview", target: "overview" },
+      { label: "Experience", target: "experience" },
       { label: "Expertise", target: "focus" },
       { label: "Featured Project", target: "projects" },
-      { label: "Publications", target: "papers" },
+      { label: "Research Outputs", target: "papers" },
+      { label: "Education", target: "education" },
       { label: "Contact", target: "contact" },
     ],
     contacts: [
@@ -585,7 +635,7 @@ const SITE_CONTENT = {
         id: "experience",
         title: "Experience",
         kicker: "3 career stages",
-        intro: "A progression from regional medical support to central medical strategy, built around precision oncology and clinical translation.",
+        intro: "A progression from regional MSL and medical support to central medical strategy and clinical study management in oncology.",
         type: "timeline",
         items: [
           {
@@ -593,10 +643,26 @@ const SITE_CONTENT = {
             company: "Amoy Diagnostics Co., Ltd.",
             role: "Medical Scientist | Reporting to CMO",
             bullets: [
-              "Develop and execute the annual medical strategy for lung cancer, spanning KOL insights, evidence interpretation, academic programs and internal medical support.",
-              "Maintain engagement with leading lung cancer KOLs in China and convert expert feedback into product positioning, research design and communication priorities.",
-              "Lead or contribute to central medical clinical study design, study execution and data interpretation for liquid biopsy and translational oncology programs.",
-              "Track ELCC, WCLC, ASCO and other major congress updates to generate scientific materials for internal alignment and external engagement.",
+              {
+                title: "Medical Strategy and KOL Insights",
+                copy: "Contribute to and execute the annual lung cancer medical strategy by integrating investigator engagement, expert interviews, and evidence tracking from ELCC, WCLC, ASCO, and other sources into research priorities, scientific programs, and internal medical recommendations.",
+              },
+              {
+                title: "Clinical Study Design and Documents",
+                copy: "Support IIT and real-world study design, including target population, eligibility criteria, endpoints, follow-up, and sampling timepoints, and contribute to protocols, data collection forms, follow-up forms, and study management trackers.",
+              },
+              {
+                title: "Multicenter Project Management",
+                copy: "Coordinate national multicenter study timelines, enrollment targets, site communication, sample workflows, and follow-up activities, working with investigators, internal teams, and external testing, statistics, and data-analysis partners to track milestones and close issues.",
+              },
+              {
+                title: "Medical Review, Query Resolution, and Data Review",
+                copy: "Within IITs and real-world studies, review enrollment cases, clinical and biospecimen information, protocol implementation, and data consistency, providing medical responses and supporting cross-team issue resolution.",
+              },
+              {
+                title: "Evidence Generation, Publications, and Communication",
+                copy: "Contribute to data interpretation and the development of abstracts, manuscripts, study reports, and congress materials, translating findings into KOL communication, medical education, and internal scientific support.",
+              },
             ],
           },
           {
@@ -604,9 +670,9 @@ const SITE_CONTENT = {
             company: "Genecast Biotechnology Co., Ltd.",
             role: "MSL Manager | Reporting to Medical Product Director",
             bullets: [
-              "Managed regional medical affairs across Shanghai, Jiangsu and Zhejiang with a focus on clinical adoption of oncology testing products.",
-              "Improved KOL understanding of product value through expert meetings, academic visits and disease-area discussions.",
-              "Supported commercial and product teams with clinical scenario interpretation, evidence messaging and cross-functional medical input.",
+              "Managed regional oncology medical affairs and KOL engagement across Shanghai, Jiangsu, and Zhejiang, building a consistent scientific support network.",
+              "Collected clinical insights through expert meetings, KOL visits, and disease-area discussions to support precision-oncology evidence communication.",
+              "Provided internal teams with disease-area, clinical-scenario, and scientific-evidence support to strengthen cross-functional medical collaboration.",
             ],
           },
           {
@@ -649,30 +715,40 @@ const SITE_CONTENT = {
       },
       {
         id: "focus",
-        title: "Core Strengths",
-        kicker: "Therapeutic Focus",
-        intro: "Capabilities are organized around disease understanding, evidence translation, study design and expert engagement required for oncology medical affairs.",
+        title: "Core Expertise",
+        kicker: "Medical Affairs Capabilities",
+        intro: "Capabilities aligned with Medical Affairs, MSL, and Clinical Medical Manager roles across strategy, study design, project delivery, medical review, KOL engagement, and evidence communication.",
         type: "focus",
         items: [
           {
-            title: "Lung cancer treatment landscape",
-            image: "./assets/focus/lung-landscape.jpg",
-            copy: "Strong understanding of NSCLC and SCLC treatment pathways, with continuous attention to targeted therapy, immunotherapy, TKI resistance and ADC innovation.",
+            icon: "strategy",
+            title: "Oncology Medical Strategy and Disease-area Expertise",
+            copy: "Familiar with NSCLC and SCLC treatment pathways and evolving evidence in targeted therapy, immunotherapy, TKI resistance, ADCs, and biomarkers. Able to integrate evidence tracking and KOL insights into medical strategy, research priorities, and scientific communication.",
           },
           {
-            title: "Translational medicine and biomarkers",
-            image: "./assets/focus/biomarkers.jpg",
-            copy: "Experienced in designing studies from clinical questions, interpreting data and forming medical arguments that connect testing value, efficacy prediction and clinical decision-making.",
+            icon: "documents",
+            title: "Clinical Study Design and Document Development",
+            copy: "Experienced in supporting IIT and real-world study design from unmet clinical needs, including target population, eligibility criteria, endpoints, follow-up, and sampling timepoints. Able to contribute to protocols, data collection forms, follow-up forms, and study management documents.",
           },
           {
-            title: "KOL insights and medical strategy",
-            image: "./assets/focus/kol-strategy.jpg",
-            copy: "Able to extract real clinical needs from expert engagement and translate insights into academic program design, study direction and internal strategy.",
+            icon: "network",
+            title: "Multicenter Clinical Project Management",
+            copy: "Experienced in coordinating national multicenter timelines, site initiation, enrollment targets, sample workflows, follow-up, and study milestones. Able to work across investigators, internal teams, and external testing, statistics, and data-analysis partners.",
           },
           {
-            title: "Clinical study design",
-            image: "./assets/focus/study-design.jpg",
-            copy: "Experienced in real-world clinical research design, starting from unmet clinical needs and integrating evidence landscape review, sample size estimation and biomarker exploration to develop scientifically meaningful and clinically translatable study protocols.",
+            icon: "review",
+            title: "Medical Monitoring and Data Review",
+            copy: "Within IITs and real-world studies, able to review enrollment, case information, clinical and biospecimen data, protocol implementation, and study-related medical questions for consistency and issue resolution. Experienced in working with investigators and project teams to support data quality and issue closure.",
+          },
+          {
+            icon: "engagement",
+            title: "KOL Management and Medical Education",
+            copy: "Experienced in regional and national engagement with lung cancer investigators through interviews, scientific meetings, and study collaboration. Able to translate clinical insights into medical education, scientific programs, and internal training.",
+          },
+          {
+            icon: "evidence",
+            title: "Evidence Generation and Scientific Communication",
+            copy: "Experienced in contributing to biomarker strategy, data analysis, and medical interpretation, and in developing abstracts, manuscripts, study reports, and congress materials. Able to translate findings into clear, compliant medical value communication for different audiences.",
           },
         ],
       },
