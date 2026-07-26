@@ -7,7 +7,7 @@ const state = {
 };
 
 const $ = (selector) => document.querySelector(selector);
-const MODULE_TAB_ORDER = ["experience", "focus", "projects", "papers", "education"];
+const MODULE_TAB_ORDER = ["experience", "focus", "projects", "studies", "papers", "education"];
 
 function t(path) {
   return path.split(".").reduce((value, key) => value?.[key], SITE_CONTENT[state.lang]);
@@ -20,6 +20,9 @@ function currentTabs() {
 
 function setTextContent() {
   document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
+  document
+    .querySelector('meta[name="description"]')
+    .setAttribute("content", t("meta.description"));
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = t(node.dataset.i18n);
     if (typeof value === "string") {
@@ -157,6 +160,7 @@ function renderModuleContent() {
 function renderByType(tab) {
   if (tab.type === "timeline") return renderTimeline(tab.items);
   if (tab.type === "projects") return renderFeaturedProject();
+  if (tab.type === "studies") return renderSelectedStudies(tab.items);
   if (tab.type === "papers") return renderPapers();
   if (tab.type === "focus") return renderFocus(tab.items);
   if (tab.type === "education") return renderEducation(tab.items);
@@ -224,6 +228,12 @@ function renderProjectButton(item) {
   return `<a class="case-link" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
 
+function renderBilingualTitle(title) {
+  const [primary, secondary] = title.split("｜").map((part) => part.trim());
+  if (!secondary) return primary;
+  return `${primary}<span class="title-translation">${secondary}</span>`;
+}
+
 function renderFeaturedProject() {
   const project = projectData();
   return `
@@ -246,26 +256,7 @@ function renderFeaturedProject() {
 
       <section class="case-section">
         <div class="case-section-head">
-          <span>My Role</span>
-          <h4>${state.lang === "zh" ? "项目职责" : "Project Responsibilities"}</h4>
-        </div>
-        <div class="role-grid">
-          ${project.roles
-            .map(
-              (role) => `
-                <article class="role-card">
-                  <h5>${role.title}</h5>
-                  <p>${role.copy}</p>
-                </article>
-              `
-            )
-            .join("")}
-        </div>
-      </section>
-
-      <section class="case-section">
-        <div class="case-section-head">
-          <span>${state.lang === "zh" ? "Core Outputs" : "Core Outputs"}</span>
+          <span>Core Outputs</span>
           <h4>${state.lang === "zh" ? "核心成果" : "Core Study Outputs"}</h4>
         </div>
         <div class="output-grid">
@@ -277,6 +268,25 @@ function renderFeaturedProject() {
                   <h5>${item.title}</h5>
                   <p>${item.copy}</p>
                   ${renderProjectButton(item)}
+                </article>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section-head">
+          <span>My Role</span>
+          <h4>${state.lang === "zh" ? "项目职责" : "Project Responsibilities"}</h4>
+        </div>
+        <div class="role-grid">
+          ${project.roles
+            .map(
+              (role) => `
+                <article class="role-card">
+                  <h5>${renderBilingualTitle(role.title)}</h5>
+                  <p>${role.copy}</p>
                 </article>
               `
             )
@@ -361,7 +371,9 @@ function renderFeaturedProject() {
 }
 
 function renderPapers() {
-  const papers = SITE_CONTENT[state.lang].papers;
+  const papers = [...SITE_CONTENT[state.lang].papers].sort(
+    (a, b) => prioritizedPaperUrls.indexOf(a.url) - prioritizedPaperUrls.indexOf(b.url)
+  );
   return `
     <div class="paper-list">
       ${papers
@@ -374,6 +386,41 @@ function renderPapers() {
                 <p>${paper.journal} · ${paper.year} · IF ${paper.impact}</p>
               </div>
             </a>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderSelectedStudies(items) {
+  const labels =
+    state.lang === "zh"
+      ? { question: "临床问题", responsibility: "个人职责", outcome: "成果" }
+      : { question: "Clinical Question", responsibility: "Role", outcome: "Outcome" };
+
+  return `
+    <div class="study-grid">
+      ${items
+        .map(
+          (item) => `
+            <article class="study-card">
+              <h4>${item.title}</h4>
+              <dl>
+                <div>
+                  <dt>${labels.question}</dt>
+                  <dd>${item.question}</dd>
+                </div>
+                <div>
+                  <dt>${labels.responsibility}</dt>
+                  <dd>${item.responsibility}</dd>
+                </div>
+                <div>
+                  <dt>${labels.outcome}</dt>
+                  <dd>${item.outcome}</dd>
+                </div>
+              </dl>
+            </article>
           `
         )
         .join("")}
@@ -404,7 +451,7 @@ function renderFocus(items) {
             <article class="focus-card">
               <span class="focus-icon" aria-hidden="true">${icons[item.icon] || "•"}</span>
               <div>
-                <h4>${item.title}</h4>
+                <h4>${renderBilingualTitle(item.title)}</h4>
                 <p>${item.copy}</p>
               </div>
             </article>
