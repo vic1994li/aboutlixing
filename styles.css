@@ -576,7 +576,7 @@ li {
   grid-template-columns: 44px minmax(0, 1fr);
   gap: 14px;
   align-content: start;
-  min-height: 230px;
+  min-height: 170px;
   padding: 20px;
 }
 
@@ -726,6 +726,7 @@ li {
 .case-label,
 .case-section-head span,
 .case-value span,
+.output-card > span,
 .evidence-card span,
 .case-timeline-item span {
   color: var(--accent-deep);
@@ -832,6 +833,7 @@ li {
 
 .case-two-col,
 .role-grid,
+.output-grid,
 .evidence-grid {
   display: grid;
   gap: 14px;
@@ -845,8 +847,13 @@ li {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.output-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .case-info-card,
-.role-card {
+.role-card,
+.output-card {
   padding: 17px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -855,6 +862,7 @@ li {
 
 .case-info-card h5,
 .role-card h5,
+.output-card h5,
 .case-timeline-item h5,
 .evidence-card h5 {
   margin: 0 0 8px;
@@ -865,11 +873,63 @@ li {
 
 .case-info-card p,
 .role-card p,
+.output-card p,
 .case-timeline-item p,
 .evidence-card p {
   margin: 0;
   color: var(--ink-soft);
   line-height: 1.68;
+}
+
+.output-card {
+  display: flex;
+  min-height: 170px;
+  flex-direction: column;
+}
+
+.output-card h5 {
+  margin-top: 10px;
+}
+
+.output-card .case-link {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.project-details-toggle {
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(44, 122, 123, 0.34);
+  border-radius: 8px;
+  color: var(--accent-deep);
+  background: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.project-details-toggle::after {
+  margin-left: 8px;
+  content: "↓";
+}
+
+.project-details-toggle[aria-expanded="true"]::after {
+  content: "↑";
+}
+
+.project-details-toggle:hover,
+.project-details-toggle:focus-visible {
+  border-color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+.project-details-panel {
+  display: grid;
+  gap: 26px;
+}
+
+.project-details-panel[hidden] {
+  display: none;
 }
 
 .case-timeline {
@@ -1113,6 +1173,7 @@ li {
 
   .focus-grid,
   .role-grid,
+  .output-grid,
   .evidence-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1154,13 +1215,22 @@ li {
   .media-gallery,
   .case-two-col,
   .role-grid,
+  .output-grid,
   .evidence-grid {
     grid-template-columns: 1fr;
+  }
+
+  .output-card {
+    min-height: auto;
   }
 
   .focus-card:last-child:nth-child(3n + 1),
   .role-card:last-child:nth-child(3n + 1) {
     grid-column: auto;
+  }
+
+  .focus-card {
+    min-height: auto;
   }
 
   .skills-strip,

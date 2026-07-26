@@ -139,6 +139,19 @@ function renderModuleContent() {
       renderModuleContent();
     });
   });
+
+  const detailsButton = content.querySelector("[data-project-details]");
+  if (detailsButton) {
+    detailsButton.addEventListener("click", () => {
+      const panel = content.querySelector("#projectDetails");
+      const isOpen = detailsButton.getAttribute("aria-expanded") === "true";
+      detailsButton.setAttribute("aria-expanded", String(!isOpen));
+      detailsButton.textContent = isOpen
+        ? projectData().details.open
+        : projectData().details.close;
+      panel.hidden = isOpen;
+    });
+  }
 }
 
 function renderByType(tab) {
@@ -233,25 +246,8 @@ function renderFeaturedProject() {
 
       <section class="case-section">
         <div class="case-section-head">
-          <span>${state.lang === "zh" ? "Why This Study Matters" : "Why This Study Matters"}</span>
-          <h4>${state.lang === "zh" ? "研究背景与项目价值" : "Clinical Need and Study Innovation"}</h4>
-        </div>
-        <div class="case-two-col">
-          <article class="case-info-card">
-            <h5>${state.lang === "zh" ? "Clinical Need｜临床需求" : "Clinical Need"}</h5>
-            <p>${project.sections.clinicalNeed}</p>
-          </article>
-          <article class="case-info-card">
-            <h5>${state.lang === "zh" ? "Study Innovation｜研究创新" : "Study Innovation"}</h5>
-            <p>${project.sections.innovation}</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <div class="case-section-head">
-          <span>${state.lang === "zh" ? "My Role" : "My Role"}</span>
-          <h4>${state.lang === "zh" ? "从研究设计到医学传播的全流程推进" : "Across the Project Lifecycle"}</h4>
+          <span>My Role</span>
+          <h4>${state.lang === "zh" ? "项目职责" : "Project Responsibilities"}</h4>
         </div>
         <div class="role-grid">
           ${project.roles
@@ -269,43 +265,18 @@ function renderFeaturedProject() {
 
       <section class="case-section">
         <div class="case-section-head">
-          <span>${state.lang === "zh" ? "Project Journey" : "Project Journey"}</span>
-          <h4>${state.lang === "zh" ? "项目推进时间线" : "Project Timeline"}</h4>
+          <span>${state.lang === "zh" ? "Core Outputs" : "Core Outputs"}</span>
+          <h4>${state.lang === "zh" ? "核心成果" : "Core Study Outputs"}</h4>
         </div>
-        <div class="case-timeline">
-          ${project.timeline
-            .map(
-              (step) => `
-                <article class="case-timeline-item">
-                  <span>${step.phase}</span>
-                  <h5>${step.title}</h5>
-                  <p>${step.copy}</p>
-                  ${step.imageKey ? renderProjectImage(step.imageKey, step.title, "timeline-image") : ""}
-                  ${renderProjectButton(step)}
-                </article>
-              `
-            )
-            .join("")}
-        </div>
-      </section>
-
-      <section class="case-section">
-        <div class="case-section-head">
-          <span>${state.lang === "zh" ? "Evidence Gallery" : "Evidence Gallery"}</span>
-          <h4>${state.lang === "zh" ? "项目成果展示" : "Project Outputs"}</h4>
-        </div>
-        <div class="evidence-grid">
-          ${project.evidence
+        <div class="output-grid">
+          ${project.outputs
             .map(
               (item) => `
-                <article class="evidence-card ${item.imageKey ? "" : "text-only"}">
-                  ${item.imageKey ? renderProjectImage(item.imageKey, item.title, "evidence-image") : ""}
-                  <div>
-                    <span>${item.type}</span>
-                    <h5>${item.title}</h5>
-                    <p>${item.copy}</p>
-                    ${renderProjectButton(item)}
-                  </div>
+                <article class="output-card">
+                  <span>${item.type}</span>
+                  <h5>${item.title}</h5>
+                  <p>${item.copy}</p>
+                  ${renderProjectButton(item)}
                 </article>
               `
             )
@@ -313,11 +284,78 @@ function renderFeaturedProject() {
         </div>
       </section>
 
-      <section class="case-value">
-        <span>${state.lang === "zh" ? "Project Value Summary" : "Project Value Summary"}</span>
-        <h4>${state.lang === "zh" ? "项目能力总结" : "Capability Summary"}</h4>
-        <p>${project.sections.valueSummary}</p>
-      </section>
+      <button
+        class="project-details-toggle"
+        type="button"
+        data-project-details
+        aria-expanded="false"
+        aria-controls="projectDetails"
+      >${project.details.open}</button>
+
+      <div class="project-details-panel" id="projectDetails" hidden>
+        <section class="case-section">
+          <div class="case-section-head">
+            <span>Study Context</span>
+            <h4>${state.lang === "zh" ? "临床需求与研究思路" : "Clinical Need and Study Approach"}</h4>
+          </div>
+          <div class="case-two-col">
+            <article class="case-info-card">
+              <h5>${state.lang === "zh" ? "Clinical Need｜临床需求" : "Clinical Need"}</h5>
+              <p>${project.sections.clinicalNeed}</p>
+            </article>
+            <article class="case-info-card">
+              <h5>${state.lang === "zh" ? "Study Approach｜研究思路" : "Study Approach"}</h5>
+              <p>${project.sections.innovation}</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <div class="case-section-head">
+            <span>Project Journey</span>
+            <h4>${state.lang === "zh" ? "项目推进时间线" : "Project Timeline"}</h4>
+          </div>
+          <div class="case-timeline">
+            ${project.timeline
+              .map(
+                (step) => `
+                  <article class="case-timeline-item">
+                    <span>${step.phase}</span>
+                    <h5>${step.title}</h5>
+                    <p>${step.copy}</p>
+                    ${step.imageKey ? renderProjectImage(step.imageKey, step.title, "timeline-image") : ""}
+                    ${renderProjectButton(step)}
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </section>
+
+        <section class="case-section">
+          <div class="case-section-head">
+            <span>Evidence Gallery</span>
+            <h4>${state.lang === "zh" ? "项目证据说明" : "Study Evidence"}</h4>
+          </div>
+          <div class="evidence-grid">
+            ${project.evidence
+              .map(
+                (item) => `
+                  <article class="evidence-card ${item.imageKey ? "" : "text-only"}">
+                    ${item.imageKey ? renderProjectImage(item.imageKey, item.title, "evidence-image") : ""}
+                    <div>
+                      <span>${item.type}</span>
+                      <h5>${item.title}</h5>
+                      <p>${item.copy}</p>
+                      ${renderProjectButton(item)}
+                    </div>
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </section>
+      </div>
     </div>
   `;
 }
