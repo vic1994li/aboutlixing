@@ -14,8 +14,8 @@ const sharedPaperLinks = {
 
 const prioritizedPaperUrls = [
   sharedPaperLinks.lungCancer,
-  sharedPaperLinks.stttSclc,
   sharedPaperLinks.natCommun,
+  sharedPaperLinks.stttSclc,
   sharedPaperLinks.jtm,
   sharedPaperLinks.frontImmunol,
   sharedPaperLinks.cellBiosci,
@@ -39,7 +39,7 @@ const featuredProject = {
     label: "Featured Project · NSCLC · MRD · Translational Research",
     title: "驱动基因突变NSCLC MRD全国多中心转化研究",
     summary:
-      "围绕驱动基因ctDNA在术后复发风险评估中的价值，负责全国多中心MRD研究的整体设计与推进，统筹临床数据、样本检测、统计分析和成果发表。研究已完成ClinicalTrials.gov注册，并获ESMO Asia 2025口头汇报。",
+      "基于驱动基因突变作为肺癌发生发展的主干分子事件，探索驱动基因导向的液体活检用于术后复发监测和MRD评估的可行性。联合全国14家临床中心开展多中心研究，统筹研究设计、中心入组、样本检测、随访及数据分析，为公司MRD产品注册前积累关键临床证据；研究中期结果获ESMO Asia 2025口头汇报。",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
       "全国多中心真实世界研究",
@@ -55,30 +55,36 @@ const featuredProject = {
     },
     roles: [
       {
-        title: "Clinical Question & Biomarker Strategy｜临床问题与标志物策略",
-        copy: "围绕驱动基因ctDNA与术后复发风险建立研究假设和生物标志物框架。",
+        title: "Scientific Rationale & Biomarker Strategy｜科学依据与标志物策略",
+        copy: "基于驱动基因主干事件特征，建立driver-informed MRD研究假设和监测框架。",
       },
       {
-        title: "Study Design & Analysis｜研究设计与分析方案",
-        copy: "主导研究方案、CRF和SAP撰写，明确研究人群、终点、临床变量及统计方法。",
+        title: "Study Design & Multicenter Execution｜研究设计与多中心执行",
+        copy: "主导方案、CRF及SAP撰写，统筹14家中心的入组、样本、随访和数据质量。",
       },
       {
-        title: "Multicenter Execution｜多中心研究执行",
-        copy: "负责中心入组、样本和随访管理，并协调CRO、研究者及内部团队完成项目交付。",
+        title: "Product Evidence Generation｜产品证据生成",
+        copy: "通过多中心真实世界研究积累MRD产品注册前关键临床证据，并探索上市后应用场景。",
       },
       {
-        title: "Data Interpretation｜数据解读",
-        copy: "整合临床特征、驱动基因、MRD状态和生存结局，完成统计结果审核及医学解释。",
-      },
-      {
-        title: "Publication & Medical Communication｜成果发表与医学传播",
-        copy: "负责摘要、论文和会议材料撰写，并将研究结论用于专家沟通和医学宣讲。",
+        title: "Data Interpretation & Scientific Communication｜数据解读与学术传播",
+        copy: "整合临床、驱动基因、MRD和结局数据，推动国际会议汇报、论文及专家沟通。",
       },
     ],
     outputs: [
       {
+        type: "Study Scale",
+        title: "14家临床中心",
+        copy: "全国多中心研究执行",
+      },
+      {
+        type: "Product Evidence",
+        title: "Pre-registration Evidence",
+        copy: "产品注册前临床证据积累",
+      },
+      {
         type: "Registration",
-        title: "ClinicalTrials.gov 注册",
+        title: "ClinicalTrials.gov",
         copy: "NCT06443684",
         button: "查看注册",
         urlKey: "registrationUrl",
@@ -86,19 +92,7 @@ const featuredProject = {
       {
         type: "Conference",
         title: "ESMO Asia 2025",
-        copy: "国际会议口头汇报",
-      },
-      {
-        type: "Collaboration",
-        title: "全国多中心研究",
-        copy: "研究者与多中心协作",
-      },
-      {
-        type: "Coverage",
-        title: "第三方报道",
-        copy: "研究成果公开报道",
-        button: "阅读报道",
-        urlKey: "coverageUrl",
+        copy: "中期结果口头汇报",
       },
     ],
     details: {
@@ -173,9 +167,9 @@ const featuredProject = {
   },
   en: {
     label: "Featured Project · NSCLC · MRD · Translational Research",
-    title: "National Multicenter Translational Study of MRD in Driver-mutant NSCLC",
+    title: "National Multicenter Translational MRD Study in Driver-Mutant NSCLC",
     summary:
-      "Lead the design and execution of a national multicenter MRD study evaluating driver-gene ctDNA for postoperative recurrence risk. Coordinate clinical data, sample testing, statistical analysis, and publication. The study is registered on ClinicalTrials.gov and was selected for an oral presentation at ESMO Asia 2025.",
+      "Grounded in the role of oncogenic driver alterations as trunk events in lung cancer, this study evaluates the feasibility of driver-informed liquid biopsy for postoperative recurrence surveillance and MRD assessment. The study is being conducted across 14 clinical sites, with responsibility spanning study design, site enrollment, sample testing, follow-up, and data analysis. The program is generating key pre-registration clinical evidence for the company’s MRD product, and interim results were selected for oral presentation at ESMO Asia 2025.",
     role: "Project Lead / Medical Affairs & Translational Research",
     highlights: [
       "National multicenter real-world study",
@@ -191,27 +185,33 @@ const featuredProject = {
     },
     roles: [
       {
-        title: "Clinical Question & Biomarker Strategy",
-        copy: "Define the research hypothesis and biomarker framework linking driver-gene ctDNA with postoperative recurrence risk.",
+        title: "Scientific Rationale & Biomarker Strategy",
+        copy: "Built the driver-informed MRD hypothesis and monitoring framework around the truncal nature of oncogenic driver alterations.",
       },
       {
-        title: "Study Design & Analysis",
-        copy: "Lead protocol, CRF, and SAP authoring and define the study population, endpoints, clinical variables, and statistical methods.",
+        title: "Study Design & Multicenter Execution",
+        copy: "Led protocol, CRF, and SAP development and managed enrollment, samples, follow-up, and data quality across 14 sites.",
       },
       {
-        title: "Multicenter Execution",
-        copy: "Manage site enrollment, samples, and follow-up and coordinate the CRO, investigators, and internal teams.",
+        title: "Product Evidence Generation",
+        copy: "Used a multicenter real-world study to generate key pre-registration clinical evidence for the MRD product and explore post-launch use cases.",
       },
       {
-        title: "Data Interpretation",
-        copy: "Integrate clinical features, driver alterations, MRD status, and survival outcomes for statistical review and medical interpretation.",
-      },
-      {
-        title: "Publication & Medical Communication",
-        copy: "Author abstracts, manuscripts, and congress materials and present study findings to clinical experts.",
+        title: "Data Interpretation & Scientific Communication",
+        copy: "Integrated clinical, driver alteration, MRD, and outcome data and developed congress presentations, manuscripts, and KOL communications.",
       },
     ],
     outputs: [
+      {
+        type: "Study Scale",
+        title: "14 Clinical Sites",
+        copy: "National multicenter study execution",
+      },
+      {
+        type: "Product Evidence",
+        title: "Pre-registration Evidence",
+        copy: "Clinical evidence development for product registration",
+      },
       {
         type: "Registration",
         title: "ClinicalTrials.gov",
@@ -222,19 +222,7 @@ const featuredProject = {
       {
         type: "Conference",
         title: "ESMO Asia 2025",
-        copy: "Oral presentation",
-      },
-      {
-        type: "Collaboration",
-        title: "National Multicenter Study",
-        copy: "Investigator and site collaboration",
-      },
-      {
-        type: "Coverage",
-        title: "External Coverage",
-        copy: "Public reporting of study results",
-        button: "Read Coverage",
-        urlKey: "coverageUrl",
+        copy: "Interim results selected for oral presentation",
       },
     ],
     details: {
@@ -314,20 +302,21 @@ const SITE_CONTENT = {
     meta: {
       name: "李行",
       roleShort: "肿瘤医学事务",
-      description: "肿瘤医学事务、肺癌转化医学、生物标志物研究及临床证据生成个人作品集。",
+      description: "肿瘤医学事务、肺癌转化医学、生物标志物、伴随诊断及临床证据生成个人作品集。",
     },
     actions: {
       contact: "联系我",
       explore: "查看工作经历",
-      resume: "下载简历",
+      resume: "下载中英文简历",
     },
     hero: {
-      eyebrow: "肿瘤医学事务 · 转化医学 · 精准肿瘤学",
+      eyebrow: "肿瘤医学事务 · 转化医学 · 临床证据生成",
       name: "李行",
       location: "Shanghai, China",
       photoNote: "职业照待补充",
+      tagline: "肺癌转化医学 / 生物标志物与伴随诊断 / 专家洞察与医学策略",
       summary:
-        "长期从事肿瘤医学事务与转化研究，主要聚焦肺癌靶向治疗、免疫治疗、耐药机制及液体活检。擅长从临床问题出发设计生物标志物研究，整合临床与分子数据，完成结果解读和成果发表，并将研究证据用于医学策略和专家沟通。具备多中心研究、CRF、SAP及CRO管理经验。",
+        "具备6年以上肿瘤医学事务与转化研究经验，聚焦肺癌靶向治疗、免疫治疗、耐药机制及液体活检。擅长在Ⅰ–Ⅱ期临床试验及研究者发起研究（IIT）中开展生物标志物研究，完成临床与分子数据挖掘、结果解读和成果发表；能够识别肿瘤精准诊疗中的未满足需求，并通过专家沟通和医学教育推动临床证据传播。",
     },
     evidence: {
       eyebrow: "证据积累与专业能力",
@@ -335,27 +324,27 @@ const SITE_CONTENT = {
         label: "科研转化",
         publications: {
           value: "9",
-          label: "篇临床/转化研究SCI论文",
+          label: "篇临床及转化研究SCI论文",
         },
         impact: {
           value: "140+",
-          label: "累计影响因子",
+          label: "署名SCI论文累计影响因子",
         },
         centers: {
           value: "14",
-          label: "家中心的多中心研究管理",
+          label: "多中心研究最多覆盖研究中心数",
         },
       },
       focus: {
         label: "专业聚焦",
-        tags: ["肺癌", "转化医学", "生物标志物", "精准肿瘤学"],
+        tags: ["肺癌", "转化医学", "伴随诊断", "生物标志物"],
       },
       strengths: {
         label: "核心能力",
-        tags: ["转化研究设计", "临床与分子数据解读", "医学策略与KOL合作", "多中心证据生成"],
+        tags: ["医学策略", "产品证据生成", "专家洞察", "多中心项目管理"],
       },
       note:
-        "从临床问题出发，完成研究设计、数据解读和成果发表。",
+        "从未满足需求出发，形成研究设计、临床证据和医学传播。",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -370,22 +359,26 @@ const SITE_CONTENT = {
     },
     skills: [
       "Translational Medicine",
+      "Companion Diagnostics",
       "Biomarker Strategy",
       "Medical Strategy",
       "Clinical Evidence Generation",
-      "KOL Engagement",
-      "Scientific Publication",
+      "Multicenter Study Management",
     ],
     navItems: [
       { label: "首页", target: "overview" },
       { label: "工作经历", target: "experience" },
       { label: "核心能力", target: "focus" },
       { label: "代表项目", target: "projects" },
-      { label: "精选研究", target: "studies" },
-      { label: "科研产出", target: "papers" },
-      { label: "教育背景", target: "education" },
+      { label: "转化研究", target: "studies" },
+      { label: "论文", target: "papers" },
       { label: "联系我", target: "contact" },
     ],
+    educationBlock: {
+      eyebrow: "Education",
+      title: "教育背景",
+      location: "来自浙江绍兴，现居上海",
+    },
     contacts: [
       { label: "电话", value: "+86-13116852660", href: "tel:+8613116852660" },
       { label: "邮箱", value: "lixingcycu@sina.com", href: "mailto:lixingcycu@sina.com" },
@@ -408,19 +401,49 @@ const SITE_CONTENT = {
             company: "厦门艾德生物医药有限公司",
             role: "医学科学家 | 汇报对象：CMO",
             bullets: [
-              "负责肺癌医学策略与转化研究规划，围绕MRD、靶向治疗耐药、免疫微环境及生物标志物开展研究和KOL合作。",
-              "从临床问题出发主导IIT及真实世界研究设计，统筹临床样本、检测技术、生物标志物和统计分析框架。",
-              "负责全国多中心研究及CRO、第三方管理，完成研究方案、CRF和SAP撰写，跟进入组、样本、随访及数据质量。",
-              "深度参与数据分析、结果解读和论文撰写，并将研究结论用于医学策略、专家沟通及学术传播。",
+              {
+                title: "医学策略与研究规划",
+                copy: "统筹公司肺癌领域医学事务，制定年度医学策略及转化研究规划，围绕肺癌全病程未满足需求开展诊断和生物标志物研究。",
+              },
+              {
+                title: "KOL管理与专家洞察",
+                copy: "建立并维护核心肺癌KOL网络，通过专家拜访、顾问会及研究者会议收集临床需求和证据缺口，并转化为医学策略和研究方向。",
+              },
+              {
+                title: "产品证据生成",
+                copy: "基于临床需求及产品证据缺口，主导IIT和真实世界研究设计，支持产品注册前关键临床证据积累及上市后应用场景拓展。",
+              },
+              {
+                title: "学术进展与医学解读",
+                copy: "跟踪ELCC、ASCO、WCLC、ESMO等国际会议，以及重要临床和多组学研究进展，输出医学解读、竞争情报及专家沟通材料。",
+              },
+              {
+                title: "多中心研究管理",
+                copy: "主导研究方案、CRF和SAP撰写，负责多中心研究及CRO、第三方管理，统筹中心启动、患者入组、样本与随访、数据质量、医学答疑及问题解决。",
+              },
             ],
           },
           {
             period: "2021.03 - 2023.08",
             company: "至本医疗（上海）股份有限公司",
-            role: "MSL 经理 | 汇报对象：医学产品部总监",
+            role: "MSL经理 | 汇报对象：高级医学总监",
             bullets: [
-              "负责上海、江苏、浙江区域肿瘤医学事务及KOL管理，通过专家拜访、学术会议和病例讨论收集临床洞察。",
-              "为销售和产品团队提供疾病、检测和临床证据培训，并支持区域科研合作项目。",
+              {
+                title: "区域医学事务管理",
+                copy: "负责上海、江苏、浙江区域肿瘤医学事务及KOL管理，制定区域专家覆盖和医学沟通计划。",
+              },
+              {
+                title: "临床洞察与专家沟通",
+                copy: "通过专家拜访、病例讨论及学术会议收集临床需求、检测应用问题和专家反馈，为医学策略及产品优化提供支持。",
+              },
+              {
+                title: "科研合作与项目推进",
+                copy: "支持区域科研项目的立项讨论、方案优化、中心沟通和执行跟进，推动研究合作落地。",
+              },
+              {
+                title: "内部医学支持",
+                copy: "为销售、产品及市场团队提供疾病领域、检测技术和临床证据培训，提升跨部门医学协作效率。",
+              },
             ],
           },
           {
@@ -428,8 +451,22 @@ const SITE_CONTENT = {
             company: "上海睿昂基因科技股份有限公司",
             role: "医学顾问 | 汇报对象：医学总监",
             bullets: [
-              "负责浙江、安徽、江西等区域KOL沟通及医学支持，参与临床科研项目设计和执行。",
-              "为销售团队开展疾病领域、检测技术及临床应用培训。",
+              {
+                title: "区域KOL医学支持",
+                copy: "负责浙江、安徽、江西等区域专家维护和医学沟通，建立区域临床合作基础。",
+              },
+              {
+                title: "临床需求与项目设计",
+                copy: "收集临床检测需求和科研合作意向，参与科研项目设计、病例与样本信息整理及项目进度跟进。",
+              },
+              {
+                title: "项目协调与问题解决",
+                copy: "协调研究者与内部团队推进项目执行，处理检测应用及研究过程中的医学问题。",
+              },
+              {
+                title: "销售培训与科学沟通",
+                copy: "定期开展疾病领域、检测技术和临床应用培训，支持销售团队准确传递产品医学信息。",
+              },
             ],
           },
         ],
@@ -450,20 +487,20 @@ const SITE_CONTENT = {
         items: [
           {
             title: "EGFR-TKI耐药与免疫微环境重塑",
-            question: "EGFR-TKI耐药后，NSCLC肿瘤免疫微环境如何变化？",
-            responsibility: "参与生物标志物设计、数据分析、结果解读及论文撰写。",
+            question: "EGFR-TKI耐药后，EGFR突变NSCLC的肿瘤免疫微环境如何变化？",
+            responsibility: "参与生物标志物策略、数据分析、医学解读及论文撰写。",
             outcome: "发表于Lung Cancer。",
           },
           {
             title: "ES-SCLC免疫联合治疗生物标志物",
             question: "哪些分子和免疫特征与免疫联合抗血管及化疗疗效相关？",
-            responsibility: "负责或深度参与转化研究设计、生物标志物分析及论文撰写。",
+            responsibility: "深度参与转化研究设计、生物标志物分析、结果解读和论文撰写。",
             outcome: "发表于Signal Transduction and Targeted Therapy。",
           },
           {
             title: "DURABLE研究疗效预测标志物",
             question: "哪些ctDNA、分子亚型及免疫特征可预测ES-SCLC维持治疗获益？",
-            responsibility: "参与转化研究设计、ctDNA及生物标志物分析、结果解读和论文撰写。",
+            responsibility: "参与转化研究设计、生物标志物分析、结果解读及论文撰写。",
             outcome: "发表于Nature Communications。",
           },
         ],
@@ -496,39 +533,30 @@ const SITE_CONTENT = {
         items: [
           {
             icon: "study",
-            title: "Translational Research & Biomarkers｜转化研究与生物标志物",
-            copy: "从临床问题出发设计生物标志物研究，整合临床、分子检测及肿瘤微环境数据，探索疗效预测和耐药机制。",
+            title: "Translational Research & Companion Diagnostics｜转化研究与伴随诊断",
+            copy: "整合临床与多组学数据，识别优势人群并探索潜在伴随诊断标志物。",
           },
           {
             icon: "strategy",
             title: "Medical Strategy & KOL Insights｜医学策略与专家洞察",
-            copy: "结合指南、临床研究和专家反馈，识别肺癌诊疗中的证据缺口，形成医学策略和研究方向。",
-          },
-          {
-            icon: "analysis",
-            title: "Study Design & Evidence Generation｜研究设计与证据生成",
-            copy: "主导IIT及真实世界研究设计，制定研究人群、终点、样本和分析框架，并完成方案、CRF及SAP撰写。",
+            copy: "结合指南、研究进展和专家反馈，识别未满足需求及关键证据缺口。",
           },
           {
             icon: "evidence",
-            title: "Data Interpretation & Publication｜数据解读与成果发表",
-            copy: "负责生物标志物和统计结果的医学解读，推动摘要、论文、研究报告及国际会议材料产出。",
-          },
-          {
-            icon: "engagement",
-            title: "KOL Engagement & Communication｜KOL合作与医学传播",
-            copy: "通过专家拜访、顾问会、研究合作和医学教育开展科学交流，并持续收集临床洞察。",
+            title: "Product Evidence Generation & Scientific Translation｜产品证据生成与成果转化",
+            copy: "通过IIT及真实世界研究获取产品临床价值证据，支持注册前证据积累、上市后场景拓展和成果传播。",
           },
           {
             icon: "project",
-            title: "Multicenter & CRO Management｜多中心及CRO管理",
-            copy: "管理中心入组、样本、随访、数据质量、研究节点及CRO和第三方交付。",
+            title: "Multicenter Study & Project Management｜多中心研究与项目管理",
+            copy: "统筹中心启动、入组、样本、随访和数据质量，协调CRO及第三方交付。",
           },
         ],
       },
     ],
     papers: [
       {
+        authors: "Han X, Guo J, Li L, et al., Li X, et al.",
         title:
           "Sintilimab combined with anlotinib and chemotherapy as second-line or later therapy in extensive-stage small cell lung cancer: a phase II clinical trial.",
         journal: "Signal Transduction and Targeted Therapy",
@@ -538,6 +566,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.stttSclc,
       },
       {
+        authors: "Chen X, Xu H, Chen X, et al., Li X, et al.",
         title:
           "First-line camrelizumab plus apatinib and chemotherapy for advanced gastric cancer (SPACE): a phase 1 study.",
         journal: "Signal Transduction and Targeted Therapy",
@@ -547,6 +576,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.stttGastric,
       },
       {
+        authors: "Chen Q, Xia L, Wang J, et al., Li X, et al.",
         title:
           "EGFR-mutant NSCLC may remodel TME from non-inflamed to inflamed through acquiring resistance to EGFR-TKI treatment.",
         journal: "Lung Cancer",
@@ -556,6 +586,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.lungCancer,
       },
       {
+        authors: "Feng Z, Zhu C, Zhang X, et al., Li X, et al.",
         title:
           "Comprehensive evaluation of genomic and functional assays for homologous recombination deficiency with high-grade epithelial ovarian cancer.",
         journal: "International Journal of Gynecological Cancer",
@@ -565,6 +596,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.ijgc,
       },
       {
+        authors: "Pu X, Qi L, Yan JW, et al., Li X, et al.",
         title:
           "Oncogenic activation revealed by FGFR2 genetic alterations in intrahepatic cholangiocarcinomas.",
         journal: "Cell & Bioscience",
@@ -574,6 +606,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.cellBiosci,
       },
       {
+        authors: "Dai J, Yan H, Chen Y, et al., Li X, et al.",
         title:
           "Tumor immune microenvironment score predicts efficacy of immune checkpoint inhibitors-based regimens in advanced non-small cell lung cancer.",
         journal: "Journal of Translational Medicine",
@@ -583,6 +616,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.jtm,
       },
       {
+        authors: "Li S, Guo J, Huang Y, et al., Li X, et al.",
         title:
           "A 7-gene expression signature predicts immune microenvironment remodeling and neoadjuvant chemo-immunotherapy response in lung squamous cell carcinoma.",
         journal: "Frontiers in Immunology",
@@ -592,6 +626,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.frontImmunol,
       },
       {
+        authors: "Zhang B, Zhong R, Shi C, et al., Li X, et al.",
         title:
           "Durvalumab plus anlotinib versus durvalumab alone as maintenance treatment in extensive-stage small-cell lung cancer (DURABLE): a randomized, open-label, multicenter phase 2 trial.",
         journal: "Nature Communications",
@@ -601,6 +636,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.natCommun,
       },
       {
+        authors: "Deng M, Wang H, Pan W, et al., Li X, et al.",
         title:
           "Mutational landscape of glomus tumor and clinical application of genomic profiling based on next-generation sequencing technology.",
         journal: "Pathology - Research and Practice",
@@ -616,20 +652,21 @@ const SITE_CONTENT = {
       name: "Li Xing",
       roleShort: "Medical Affairs",
       description:
-        "Li Xing’s portfolio in oncology Medical Affairs, translational medicine, biomarker research, and clinical evidence generation.",
+        "Li Xing’s portfolio in oncology Medical Affairs, lung cancer translational medicine, biomarkers, companion diagnostics, and clinical evidence generation.",
     },
     actions: {
       contact: "Contact",
       explore: "View Experience",
-      resume: "Download CV",
+      resume: "Download Bilingual CV",
     },
     hero: {
-      eyebrow: "Medical Affairs · Translational Medicine · Precision Oncology",
+      eyebrow: "Oncology Medical Affairs · Translational Medicine · Clinical Evidence Generation",
       name: "Li Xing",
       location: "Shanghai, China",
       photoNote: "Professional photo coming soon",
+      tagline: "Lung Cancer Translational Research / Biomarkers & Companion Diagnostics / KOL Insights & Medical Strategy",
       summary:
-        "I work in oncology medical affairs and translational research, focusing on targeted therapy, immunotherapy, resistance mechanisms, and liquid biopsy in lung cancer. I design biomarker studies around clinical questions, integrate clinical and molecular data, interpret results, and publish findings. I also use study evidence in medical strategy and KOL discussions. My experience includes multicenter studies, CRFs, SAPs, and CRO management.",
+        "Oncology Medical Affairs and translational research professional with more than six years of experience, focused on targeted therapy, immunotherapy, resistance mechanisms, and liquid biopsy in lung cancer. Experienced in translational biomarker research embedded in Phase I–II clinical trials and investigator-initiated studies, including clinical and molecular data mining, medical interpretation, and scientific publication. Skilled at identifying unmet needs in precision oncology and translating evidence into KOL engagement and medical education.",
     },
     evidence: {
       eyebrow: "Evidence & Expertise",
@@ -637,32 +674,32 @@ const SITE_CONTENT = {
         label: "Research Translation",
         publications: {
           value: "9",
-          label: "Clinical/translational SCI publications",
+          label: "SCI publications in clinical and translational research",
         },
         impact: {
           value: "140+",
-          label: "Cumulative impact factor",
+          label: "Cumulative journal impact factor",
         },
         centers: {
           value: "14",
-          label: "Centers in multicenter study management",
+          label: "Sites in the largest multicenter study managed",
         },
       },
       focus: {
         label: "Professional Focus",
-        tags: ["Lung Cancer", "Translational Medicine", "Biomarkers", "Precision Oncology"],
+        tags: ["Lung Cancer", "Translational Medicine", "Companion Diagnostics", "Biomarkers"],
       },
       strengths: {
         label: "Core Capabilities",
         tags: [
-          "Translational Study Design",
-          "Clinical & Molecular Data Interpretation",
-          "Medical Strategy & KOL Collaboration",
-          "Multicenter Evidence Generation",
+          "Medical Strategy",
+          "Product Evidence Generation",
+          "KOL Insights",
+          "Multicenter Study Management",
         ],
       },
       note:
-        "From clinical question to study design, data interpretation, and publication.",
+        "From unmet need identification to study design, clinical evidence generation, and medical communication.",
     },
     modules: {
       eyebrow: "Portfolio",
@@ -678,22 +715,26 @@ const SITE_CONTENT = {
     },
     skills: [
       "Translational Medicine",
+      "Companion Diagnostics",
       "Biomarker Strategy",
       "Medical Strategy",
       "Clinical Evidence Generation",
-      "KOL Engagement",
-      "Scientific Publication",
+      "Multicenter Study Management",
     ],
     navItems: [
       { label: "Overview", target: "overview" },
       { label: "Experience", target: "experience" },
       { label: "Expertise", target: "focus" },
       { label: "Featured Project", target: "projects" },
-      { label: "Selected Studies", target: "studies" },
-      { label: "Research Outputs", target: "papers" },
-      { label: "Education", target: "education" },
+      { label: "Translational Studies", target: "studies" },
+      { label: "Publications", target: "papers" },
       { label: "Contact", target: "contact" },
     ],
+    educationBlock: {
+      eyebrow: "Education",
+      title: "Education",
+      location: "From Shaoxing, Zhejiang; based in Shanghai",
+    },
     contacts: [
       { label: "Phone", value: "+86-13116852660", href: "tel:+8613116852660" },
       { label: "Email", value: "lixingcycu@sina.com", href: "mailto:lixingcycu@sina.com" },
@@ -716,19 +757,49 @@ const SITE_CONTENT = {
             company: "Amoy Diagnostics Co., Ltd.",
             role: "Medical Scientist | Reporting to CMO",
             bullets: [
-              "Lead lung cancer medical strategy and translational research planning across MRD, targeted-therapy resistance, immune microenvironment, biomarkers, and KOL collaborations.",
-              "Design IITs and real-world studies around clinical questions, integrating clinical samples, testing technologies, biomarkers, and statistical analysis frameworks.",
-              "Manage national multicenter studies, CROs, and vendors; author protocols, CRFs, and SAPs and track enrollment, samples, follow-up, and data quality.",
-              "Contribute substantially to data analysis, interpretation, and manuscript writing and use study conclusions in medical strategy, KOL discussions, and scientific communications.",
+              {
+                title: "Medical Strategy & Research Planning",
+                copy: "Lead lung cancer Medical Affairs and annual medical strategy planning, and develop translational research programs addressing unmet diagnostic and biomarker needs across the lung cancer care continuum.",
+              },
+              {
+                title: "KOL Engagement & Insights",
+                copy: "Build and maintain a national network of leading lung cancer KOLs. Gather clinical needs and evidence gaps through one-to-one engagements, advisory boards, and investigator meetings, and translate insights into medical strategy and research priorities.",
+              },
+              {
+                title: "Product Evidence Generation",
+                copy: "Lead the design of IITs and real-world studies based on clinical needs and product evidence gaps, generating pre-registration clinical evidence and expanding post-launch clinical use cases.",
+              },
+              {
+                title: "Scientific Intelligence & Medical Interpretation",
+                copy: "Track major congresses including ELCC, ASCO, WCLC, and ESMO, as well as key clinical and multiomics studies, and develop medical reviews, competitive intelligence, and scientific communication materials.",
+              },
+              {
+                title: "Multicenter Study Management",
+                copy: "Lead protocol, CRF, and SAP development and manage multicenter studies, CROs, and external vendors, including site initiation, enrollment, sample collection and follow-up, data quality, medical queries, and issue resolution.",
+              },
             ],
           },
           {
             period: "Mar 2021 - Aug 2023",
-            company: "Genecast Biotechnology Co., Ltd.",
-            role: "MSL Manager | Reporting to Medical Product Director",
+            company: "ChosenMed Technology",
+            role: "MSL Manager | Reporting to Senior Medical Director",
             bullets: [
-              "Managed oncology medical affairs and KOL engagement across Shanghai, Jiangsu, and Zhejiang, gathering clinical insights through visits, scientific meetings, and case discussions.",
-              "Delivered disease, testing, and clinical evidence training for sales and product teams and supported regional research collaborations.",
+              {
+                title: "Regional Medical Affairs Management",
+                copy: "Managed oncology Medical Affairs and KOL engagement across Shanghai, Jiangsu, and Zhejiang, including regional expert coverage and scientific engagement planning.",
+              },
+              {
+                title: "Clinical Insights & KOL Engagement",
+                copy: "Collected clinical needs, testing-related challenges, and expert feedback through KOL visits, case discussions, and scientific meetings to support medical strategy and product optimization.",
+              },
+              {
+                title: "Research Collaboration & Project Delivery",
+                copy: "Supported regional research collaborations from project scoping and protocol refinement to site communication and execution follow-up.",
+              },
+              {
+                title: "Internal Medical Support",
+                copy: "Delivered training on disease areas, testing technologies, and clinical evidence to commercial, product, and marketing teams.",
+              },
             ],
           },
           {
@@ -736,8 +807,22 @@ const SITE_CONTENT = {
             company: "Rightongene Biotechnology Co., Ltd.",
             role: "Medical Consultant | Reporting to Medical Director",
             bullets: [
-              "Managed KOL engagement and medical support across Zhejiang, Anhui, Jiangxi, and other regions, contributing to clinical research design and execution.",
-              "Trained sales teams on disease areas, testing technologies, and clinical applications.",
+              {
+                title: "Regional KOL Medical Support",
+                copy: "Provided KOL medical support and scientific communication across Zhejiang, Anhui, Jiangxi, and other regions, establishing a foundation for regional clinical collaboration.",
+              },
+              {
+                title: "Clinical Needs & Study Design",
+                copy: "Collected clinical testing needs and research collaboration opportunities and contributed to study design, case and sample data organization, and project follow-up.",
+              },
+              {
+                title: "Project Coordination & Issue Resolution",
+                copy: "Coordinated investigators and internal teams to advance project execution and resolve medical questions related to testing applications and study conduct.",
+              },
+              {
+                title: "Commercial Training & Scientific Communication",
+                copy: "Delivered regular training on disease areas, testing technologies, and clinical applications to support accurate scientific communication by commercial teams.",
+              },
             ],
           },
         ],
@@ -758,8 +843,8 @@ const SITE_CONTENT = {
         items: [
           {
             title: "EGFR-TKI Resistance and Immune Microenvironment Remodeling",
-            question: "How does the NSCLC tumor immune microenvironment change after EGFR-TKI resistance?",
-            responsibility: "Contributed to biomarker design, data analysis, interpretation, and manuscript writing.",
+            question: "How does the tumor immune microenvironment change in EGFR-mutant NSCLC after acquired resistance to EGFR-TKI?",
+            responsibility: "Contributed to biomarker strategy, data analysis, medical interpretation, and manuscript writing.",
             outcome: "Published in Lung Cancer.",
           },
           {
@@ -767,15 +852,15 @@ const SITE_CONTENT = {
             question:
               "Which molecular and immune features are associated with response to immunotherapy plus antiangiogenic therapy and chemotherapy?",
             responsibility:
-              "Led or contributed substantially to translational study design, biomarker analysis, and manuscript writing.",
+              "Contributed substantially to translational study design, biomarker analysis, result interpretation, and manuscript writing.",
             outcome: "Published in Signal Transduction and Targeted Therapy.",
           },
           {
             title: "Predictive Biomarkers in the DURABLE Study",
             question:
-              "Which ctDNA, molecular subtype, and immune features predict benefit from maintenance therapy in ES-SCLC?",
+              "Which ctDNA dynamics, molecular subtypes, and immune features predict maintenance treatment benefit in ES-SCLC?",
             responsibility:
-              "Contributed to translational study design, ctDNA and biomarker analysis, interpretation, and manuscript writing.",
+              "Contributed to translational study design, biomarker analysis, result interpretation, and manuscript writing.",
             outcome: "Published in Nature Communications.",
           },
         ],
@@ -808,39 +893,30 @@ const SITE_CONTENT = {
         items: [
           {
             icon: "study",
-            title: "Translational Research & Biomarkers",
-            copy: "Design biomarker studies around clinical questions and integrate clinical, molecular, and tumor microenvironment data to explore predictors of response and resistance.",
+            title: "Translational Research & Companion Diagnostics",
+            copy: "Integrate clinical and multiomics data to identify populations most likely to benefit and explore potential companion diagnostic biomarkers.",
           },
           {
             icon: "strategy",
             title: "Medical Strategy & KOL Insights",
-            copy: "Combine guidelines, clinical studies, and expert feedback to identify evidence gaps in lung cancer and define medical strategy and research priorities.",
-          },
-          {
-            icon: "analysis",
-            title: "Study Design & Evidence Generation",
-            copy: "Lead IIT and real-world study design, including populations, endpoints, samples, and analysis frameworks, and author protocols, CRFs, and SAPs.",
+            copy: "Combine guidelines, emerging evidence, and expert feedback to identify unmet needs and critical evidence gaps.",
           },
           {
             icon: "evidence",
-            title: "Data Interpretation & Publication",
-            copy: "Interpret biomarker and statistical results and develop abstracts, manuscripts, study reports, and international congress materials.",
-          },
-          {
-            icon: "engagement",
-            title: "KOL Engagement & Communication",
-            copy: "Engage KOLs through visits, advisory boards, research collaborations, and medical education to exchange science and gather clinical insights.",
+            title: "Product Evidence Generation & Scientific Translation",
+            copy: "Generate clinical evidence through IITs and real-world studies to support pre-registration evidence development, post-launch use-case expansion, and scientific communication.",
           },
           {
             icon: "project",
-            title: "Multicenter & CRO Management",
-            copy: "Manage site enrollment, samples, follow-up, data quality, milestones, and CRO and vendor deliverables.",
+            title: "Multicenter Study & Project Management",
+            copy: "Manage site initiation, enrollment, samples, follow-up, and data quality while coordinating CRO and external vendor deliverables.",
           },
         ],
       },
     ],
     papers: [
       {
+        authors: "Han X, Guo J, Li L, et al., Li X, et al.",
         title:
           "Sintilimab combined with anlotinib and chemotherapy as second-line or later therapy in extensive-stage small cell lung cancer: a phase II clinical trial.",
         journal: "Signal Transduction and Targeted Therapy",
@@ -850,6 +926,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.stttSclc,
       },
       {
+        authors: "Chen X, Xu H, Chen X, et al., Li X, et al.",
         title:
           "First-line camrelizumab plus apatinib and chemotherapy for advanced gastric cancer (SPACE): a phase 1 study.",
         journal: "Signal Transduction and Targeted Therapy",
@@ -859,6 +936,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.stttGastric,
       },
       {
+        authors: "Chen Q, Xia L, Wang J, et al., Li X, et al.",
         title:
           "EGFR-mutant NSCLC may remodel TME from non-inflamed to inflamed through acquiring resistance to EGFR-TKI treatment.",
         journal: "Lung Cancer",
@@ -868,6 +946,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.lungCancer,
       },
       {
+        authors: "Feng Z, Zhu C, Zhang X, et al., Li X, et al.",
         title:
           "Comprehensive evaluation of genomic and functional assays for homologous recombination deficiency with high-grade epithelial ovarian cancer.",
         journal: "International Journal of Gynecological Cancer",
@@ -877,6 +956,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.ijgc,
       },
       {
+        authors: "Pu X, Qi L, Yan JW, et al., Li X, et al.",
         title:
           "Oncogenic activation revealed by FGFR2 genetic alterations in intrahepatic cholangiocarcinomas.",
         journal: "Cell & Bioscience",
@@ -886,6 +966,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.cellBiosci,
       },
       {
+        authors: "Dai J, Yan H, Chen Y, et al., Li X, et al.",
         title:
           "Tumor immune microenvironment score predicts efficacy of immune checkpoint inhibitors-based regimens in advanced non-small cell lung cancer.",
         journal: "Journal of Translational Medicine",
@@ -895,6 +976,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.jtm,
       },
       {
+        authors: "Li S, Guo J, Huang Y, et al., Li X, et al.",
         title:
           "A 7-gene expression signature predicts immune microenvironment remodeling and neoadjuvant chemo-immunotherapy response in lung squamous cell carcinoma.",
         journal: "Frontiers in Immunology",
@@ -904,6 +986,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.frontImmunol,
       },
       {
+        authors: "Zhang B, Zhong R, Shi C, et al., Li X, et al.",
         title:
           "Durvalumab plus anlotinib versus durvalumab alone as maintenance treatment in extensive-stage small-cell lung cancer (DURABLE): a randomized, open-label, multicenter phase 2 trial.",
         journal: "Nature Communications",
@@ -913,6 +996,7 @@ const SITE_CONTENT = {
         url: sharedPaperLinks.natCommun,
       },
       {
+        authors: "Deng M, Wang H, Pan W, et al., Li X, et al.",
         title:
           "Mutational landscape of glomus tumor and clinical application of genomic profiling based on next-generation sequencing technology.",
         journal: "Pathology - Research and Practice",

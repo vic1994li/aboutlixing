@@ -2,12 +2,13 @@ const state = {
   lang: "zh",
   activeTab: "experience",
   activeProjects: new Set(),
+  showAllPapers: false,
   touchStartX: 0,
   touchStartY: 0,
 };
 
 const $ = (selector) => document.querySelector(selector);
-const MODULE_TAB_ORDER = ["experience", "focus", "projects", "studies", "papers", "education"];
+const MODULE_TAB_ORDER = ["experience", "focus", "projects", "studies", "papers"];
 
 function t(path) {
   return path.split(".").reduce((value, key) => value?.[key], SITE_CONTENT[state.lang]);
@@ -48,6 +49,13 @@ function renderEvidencePanel() {
   const evidence = SITE_CONTENT[state.lang].evidence;
   renderPillTags("evidenceFocusTags", evidence.focus.tags);
   renderPillTags("evidenceStrengthTags", evidence.strengths.tags);
+}
+
+function renderEducationBackground() {
+  const education = SITE_CONTENT[state.lang].tabs.find((tab) => tab.id === "education");
+  const container = $("#educationBackgroundList");
+  if (!education || !container) return;
+  container.innerHTML = renderEducation(education.items);
 }
 
 function renderContacts() {
@@ -155,6 +163,14 @@ function renderModuleContent() {
       panel.hidden = isOpen;
     });
   }
+
+  const paperToggle = content.querySelector("[data-paper-toggle]");
+  if (paperToggle) {
+    paperToggle.addEventListener("click", () => {
+      state.showAllPapers = !state.showAllPapers;
+      renderModuleContent();
+    });
+  }
 }
 
 function renderByType(tab) {
@@ -179,7 +195,7 @@ function renderTimeline(items) {
                 <h4>${item.company}</h4>
                 <p>${item.role}</p>
               </div>
-              <ul>
+              <ul class="experience-list">
                 ${item.bullets
                   .map((bullet) => {
                     if (typeof bullet === "string") return `<li>${bullet}</li>`;
@@ -374,23 +390,41 @@ function renderPapers() {
   const papers = [...SITE_CONTENT[state.lang].papers].sort(
     (a, b) => prioritizedPaperUrls.indexOf(a.url) - prioritizedPaperUrls.indexOf(b.url)
   );
+  const visiblePapers = state.showAllPapers ? papers : papers.slice(0, 4);
+  const toggleLabel =
+    state.lang === "zh"
+      ? state.showAllPapers
+        ? "收起论文"
+        : "查看全部论文"
+      : state.showAllPapers
+        ? "Show Fewer Publications"
+        : "View All Publications";
+
   return `
     <div class="paper-list">
-      ${papers
+      ${visiblePapers
         .map(
           (paper, index) => `
             <a class="paper-card" href="${paper.url}" target="_blank" rel="noopener noreferrer">
               <span class="paper-index">${String(index + 1).padStart(2, "0")}</span>
               <div>
+                <p class="paper-authors">${highlightAuthorSelf(paper.authors)}</p>
                 <h4>${paper.title}</h4>
-                <p>${paper.journal} · ${paper.year} · IF ${paper.impact}</p>
+                <p class="paper-meta">${paper.journal} · ${paper.year} · IF ${paper.impact}</p>
               </div>
             </a>
           `
         )
         .join("")}
     </div>
+    <button class="paper-toggle" type="button" data-paper-toggle aria-expanded="${state.showAllPapers}">
+      ${toggleLabel}
+    </button>
   `;
+}
+
+function highlightAuthorSelf(authors = "") {
+  return authors.replace(/\bLi X\b/g, '<strong class="author-self">Li X</strong>');
 }
 
 function renderSelectedStudies(items) {
@@ -516,6 +550,7 @@ function render() {
   setTextContent();
   renderSkills();
   renderEvidencePanel();
+  renderEducationBackground();
   renderContacts();
   renderTopTabs();
   renderModuleContent();
@@ -524,6 +559,7 @@ function render() {
 $("#languageToggle").addEventListener("click", () => {
   state.lang = state.lang === "zh" ? "en" : "zh";
   state.activeProjects.clear();
+  state.showAllPapers = false;
   render();
 });
 
